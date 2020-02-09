@@ -1,0 +1,84 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+nav ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+/* change colours to suit your needs */
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+/* change colours to suit your needs */
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header, nav, main, footer { max-width: 60rem; margin-left: auto; margin-right: auto; }
+
+#headerwrap { background-image: url(../images/smallheader.jpg); height: 182px; }
+
+header h1 { font-size: 2.1rem; padding-top: 1rem; padding-left: 2%; color: #fff; }
+
+header h2 { padding: .5rem 0; padding-left: 2%; color: #fff; }
+
+#navwrap { background-color: #bbb; }
+
+ul.menu { display: flex; }
+
+nav ul li:first-child a { border-left: none; }
+
+nav ul li a { border-left: 1px solid #888; display: block; background-color: #b3b3b3; color: #222; text-decoration: none; padding: .8rem .05rem; }
+
+ul.menu li { width: 25%; text-align: center; }
+
+.active a { background-color: orangered; color: #000; }
+
+nav ul li a { padding: .8rem .6rem; }
+
+main h1 { font-size: 1.8rem; padding-top: 2rem; }
+
+main h2 { font-size: 1.3rem; padding: 1.3rem 0 .1rem 0; }
+
+main p { padding: .5rem 0; line-height: 1.5rem; }
+
+main { padding-bottom: 4%; padding-left: 2%; padding-right: 2%; }
+
+#footerwrap { background-color: #ddd; color: #111; display: flex; }
+
+footer p { padding: .9rem; }
+
+@media only screen and (min-width: 560px) { ul.menu li { width: auto; text-align: center; }
+  #headerwrap { background-image: url(../images/mediumheader.jpg); height: 300px; } }
+@media only screen and (min-width: 960px) { main { padding-left: 1%; padding-right: 1%; }
+  header h1 { padding-left: .4rem; }
+  header h2 { padding-left: .4rem; }
+  #headerwrap { background-image: url(../images/HeaderLarge.jpg), url(../images/HeaderRepeat.png); height: 300px; background-position: center, center; background-repeat: no-repeat, repeat; } }

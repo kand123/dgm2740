@@ -1,0 +1,109 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /*  apply a natural box layout model to all elements  */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#headerwrap {
+    background-image: url(../images/smallheader.jpg);
+    height: 182px;
+}
+
+
+header h1 {
+    font-size: 2.1rem;
+    padding-top: 1rem;
+    padding-left: 2%;
+    color: #fff;
+}
+
+header h2 {
+    padding: .5rem 0;
+    padding-left: 2%;
+    color: #fff;
+}
+
+#navwrap {
+    background-color: #bbb;
+}
+
+ul.menu {
+    display: flex;
+    
+}
+nav ul li:first-child a {border-left:none;}
+
+ nav ul li a {
+    border-left: 1px solid #888;
+    display: block;
+    background-color: lighten(#999, 10%);
+    color: #222;
+    text-decoration: none;
+    padding: .8rem .05rem;
+}
+
+
+
+  ul.menu li {
+    width: 25%;
+    text-align: center;
+  }
+
+.active a {
+    background-color: orangered;
+    color: #000;
+}
+
+
+  nav ul li a {
+    padding: .8rem .6rem;
+}
+
+main h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+}
+
+main h2 {
+    font-size: 1.3rem;
+    padding: 1.3rem 0 .1rem 0;
+}
+
+main p {
+    padding: .5rem 0; 
+    line-height: 1.5rem;
+}
+
+main {
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+#footerwrap {
+    background-color: #ddd;
+    color: #111;
+    display: flex;
+}
+
+
+footer p {
+    padding: .9rem;
+
+}
+
