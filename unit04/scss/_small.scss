@@ -56,7 +56,7 @@ nav ul li:first-child a {
 nav ul li a {
   border-left: 1px solid rgb(95, 94, 94);
   display: block;
-  background-color: lighten(#777, 5%);
+  background-color: lighten($navColor, 5%);
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1rem;
@@ -90,9 +90,6 @@ main h1 {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-
 main {
   padding-bottom: 4%;
   padding-left: 2%;
@@ -104,10 +101,8 @@ main {
   h2 {
     font-size: 1.3rem;
     padding: 1.8rem 1rem 0.1rem 0;
-    color: rgb(58, 143, 58);
-   
+    color: rgb(58, 143, 58); 
   }
-
 }
 
 #footerwrap {
