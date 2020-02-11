@@ -104,7 +104,7 @@ div.beaver { display: flex; }
   100% { left: 0px; } }
 div.bear { display: flex; }
 
-div.bear img { position: relative; animation: walk 2.7s 1; }
+div.bear img { position: relative; animation: walk 3.5s 1; }
 
 @keyframes walk { 0% { left: 0px; bottom: 0px; transform: rotate(-2deg); }
   5% { bottom: 6px; transform: rotate(0deg); }
