@@ -37,7 +37,7 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; marg
 input, select { vertical-align: middle; }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: "Roboto", sans-serif; }
 
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -46,39 +46,87 @@ header, nav, main, footer { max-width: 60rem; margin-left: auto; margin-right: a
 
 #headerwrap { background-image: url(../images/smallheader.jpg); height: 182px; }
 
-header h1 { font-size: 2.1rem; padding-top: 1rem; padding-left: 2%; color: #fff; }
+header h1 { font-size: 2rem; padding-top: 2.7rem; padding-left: 2%; color: #fff; font-family: "Poppins", sans-serif; }
 
-header h2 { padding: .5rem 0; padding-left: 2%; color: #fff; }
+header h2 { padding: 0.5rem 0; padding-left: 2%; color: #fff; font-size: 1.3rem; letter-spacing: 0.3rem; }
 
-#navwrap { background-color: #bbb; }
+#navwrap { background-color: #ddd; }
 
 ul.menu { display: flex; }
 
 nav ul li:first-child a { border-left: none; }
 
-nav ul li a { border-left: 1px solid #888; display: block; background-color: #b3b3b3; color: #222; text-decoration: none; padding: .8rem .05rem; }
+nav ul li a { border-left: 1px solid #5f5e5e; display: block; background-color: #848484; color: #fff; text-decoration: none; padding: 0.8rem 1rem; }
 
 ul.menu li { width: 25%; text-align: center; }
 
-.active a { background-color: orangered; color: #000; }
+.active a { background-color: #8f472d; color: #fff; }
 
-nav ul li a { padding: .8rem .6rem; }
+nav ul li a:hover { background-color: #c46644; color: #000; }
 
-main h1 { font-size: 1.8rem; padding-top: 2rem; }
+nav ul li a { padding: 0.8rem 0.6rem; }
 
-main h2 { font-size: 1.3rem; padding: 1.3rem 0 .1rem 0; }
-
-main p { padding: .5rem 0; line-height: 1.5rem; }
+main h1 { font-size: 2rem; padding-top: 2.6rem; padding-bottom: 1.7rem; color: #8f472d; color: #c46644; font-family: "Poppins", sans-serif; }
 
 main { padding-bottom: 4%; padding-left: 2%; padding-right: 2%; }
+main p { padding: 0.5rem 0; line-height: 1.5rem; }
+main h2 { font-size: 1.3rem; padding: 1.8rem 1rem 0.1rem 0; color: #3a8f3a; }
 
 #footerwrap { background-color: #ddd; color: #111; display: flex; }
 
-footer p { padding: .9rem; }
+footer p { padding: 1.2rem; }
 
+div.beaver { display: flex; }
+
+.beaverimg { position: relative; animation: scurry 2s 3; }
+
+.sticksimg { background-position: bottom; transform: rotate(120deg); margin-left: 15px; margin-top: 30px; }
+
+@keyframes scurry { 0% { left: 0px; transform: rotate(0deg); }
+  5% { transform: rotate(2deg); }
+  25% { left: 10px; transform: rotate(-2deg); }
+  45% { left: 29px; transform: rotate(0deg); }
+  60% { left: 42px; transform: rotate(10deg); }
+  66% { left: 48px; transform: rotate(18deg); }
+  68% { left: 49px; transform: rotate(20deg); }
+  70% { left: 50px; transform: rotate(23deg); }
+  75% { left: 49px; }
+  80% { left: 47px; }
+  85% { left: 40px; }
+  88% { left: 32px; }
+  90% { left: 30px; }
+  91% { left: 25px; }
+  92% { left: 21px; }
+  93% { left: 16px; }
+  94% { left: 12px; }
+  96% { left: 10px; }
+  98% { left: 5px; }
+  100% { left: 0px; } }
+div.bear { display: flex; }
+
+div.bear img { position: relative; animation: walk 2s 1; }
+
+@keyframes walk { 0% { left: 0px; bottom: 0px; transform: rotate(-2deg); }
+  5% { bottom: 6px; transform: rotate(0deg); }
+  10% { bottom: -1px; transform: rotate(2deg); }
+  15% { bottom: -3px; transform: rotate(5deg); }
+  17% { bottom: 0px; transform: rotate(4deg); }
+  20% { bottom: 8px; transform: rotate(2deg); }
+  25% { bottom: 6px; transform: rotate(0deg); }
+  50% { bottom: 8px; left: 200px; transform: rotateY(180deg); transform: rotate(-20deg); }
+  52% { bottom: 8px; left: 200px; transform: rotateY(180deg); transform: rotate(0deg); }
+  55% { bottom: 3px; transform: rotate(0deg); transform: rotateY(180deg); }
+  60% { bottom: -3px; transform: rotate(3deg); transform: rotateY(180deg); }
+  75% { bottom: -2px; transform: rotate(5deg); transform: rotateY(180deg); }
+  80% { bottom: 3px; transform: rotate(2deg); transform: rotateY(180deg); }
+  90% { bottom: 5px; transform: rotateY(180deg); }
+  100% { left: 0px; transform: rotateY(180deg); } }
 @media only screen and (min-width: 560px) { ul.menu li { width: auto; text-align: center; }
+  ul.menu { padding-left: .6rem; }
+  nav ul li a { padding: .8rem 1.6rem; }
   #headerwrap { background-image: url(../images/mediumheader.jpg); height: 300px; } }
 @media only screen and (min-width: 960px) { main { padding-left: 1%; padding-right: 1%; }
   header h1 { padding-left: .4rem; }
   header h2 { padding-left: .4rem; }
+  header h1 { padding-top: 1.7rem; }
   #headerwrap { background-image: url(../images/HeaderLarge.jpg), url(../images/HeaderRepeat.png); height: 300px; background-position: center, center; background-repeat: no-repeat, repeat; } }

@@ -3,6 +3,14 @@ ul.menu li {
     text-align: center;
   }
 
+ul.menu {
+    padding-left: .6rem;
+}
+
+nav ul li a {
+    padding: .8rem 1.6rem;
+}
+
   #headerwrap {
     background-image: url(../images/mediumheader.jpg);
     height: 300px;
