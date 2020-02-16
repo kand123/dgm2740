@@ -1,8 +1,8 @@
-main {
-    padding-left: 1%;
-    padding-right: 1%;
+// main {
+//     // padding-left: 1%;
+//     // padding-right: 1%;
     
-}
+// }
 header h1 {
     padding-left: .4rem;
 
@@ -15,4 +15,12 @@ header h2 {
 header h1 {
     padding-top: 1.7rem;
 }
+ul.menu li {
+    width: auto;
+    text-align: center;
+  }
 
+  h1, h2, p {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
