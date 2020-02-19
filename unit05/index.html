@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- STYLESHEET -->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <title>Restaurant</title>
   </head>
   <body>
@@ -23,8 +26,8 @@
           />
         </figure>
         <div class="headertext">
-          <h1>Restaurant</h1>
-          <h2>Affordable Eats</h2>
+          <h1>The Queen's Plank</h1>
+          <h2>EAT LIKE ROYALTY</h2>
         </div>
       </header>
     </div>
@@ -40,36 +43,31 @@
       </nav>
     </div>
 
-    <main>
-      <figure class="heroimage">
-        <img
-          src="images/header.jpg"
-          alt="header image of table with place setting and plate of gourmet food"
-          sizes="100vw"
-          srcset="
-            images/header450.jpg 450w,
-            images/header600.jpg 600w,
-            images/header750.jpg 750w,
-            images/header900.jpg 900w,
-            images/header1050.jpg 1050w,
-            images/header1200.jpg 1200w
-          "
-        />
-      </figure>
+   
+        
+        
+      
+
+        <div id="herocontainer">
+            <picture class="heroimage"> 
+            <source media="(max-width: 450px)" srcset="images/header450.jpg" >
+            <source media="(max-width: 600px)" srcset="images/header600.jpg" >
+            <source media="(max-width: 750px)" srcset="images/header750.jpg">
+            <source media="(max-width: 900px)" srcset="images/header900.jpg">
+            <img src="images/header1050.jpg" alt="header image of table with place setting and plate of gourmet food"/>
+        </picture>
+            </div> <!--closes herocontainer-->
+            <main> 
+          <div class="bodytext">
       <h1>Our Story</h1>
-      <h2>Our Founder</h2>
 
       <p>
-        Radical innovation cultivate, social return on investment game-changer
-        radical mass incarceration human-centered. Youth, or support; program
-        areas compelling rubric revolutionary paradigm. Disrupt accessibility
-        collective impact, uplift, impact investing emerging outcomes social
-        enterprise global. Effective altruism overcome injustice systems
-        thinking parse compassion. Preliminary thinking; the improve the world
-        effective altruism venture philanthropy natural resources. Uplift
-        collaborative cities corporate social responsibility empathetic
-        do-gooder.
+        Radical innovation cultivate, social return on
+        radical mass incarceration human-centered.  
       </p>
+      <h2>Our Founder</h2>
+
+      
       <p>
         Indicators, correlation inclusion, social entrepreneur the resistance
         shared value the resistance design thinking sustainable. Equal
@@ -103,6 +101,19 @@
         unprecedented challenge social intrapreneurship change-makers synergy
         expose the truth, gender rights, inspirational, segmentation.
       </p>
+    </div> <!--closes bodytext-->
+    <div class="bosscontainer">
+
+    <picture class="mainbossimg">
+        <source media="(max-width: 300px)" srcset="images/boss300_new.jpg">
+        <source media="(max-width: 450px)" srcset="images/boss450_new.jpg">
+           <img src="images/boss600_new.jpg"  alt="ourboss"/> 
+               
+    </picture>
+</div>
+
+
+
     </main>
 
     <div id="footerwrap">
@@ -111,4 +122,4 @@
       </footer>
     </div>
   </body>
-</html>
+</html> 
