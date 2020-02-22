@@ -76,7 +76,23 @@
     </section>
     <h2>Performances</h2>
      <section class="concertpics">
-<img src="images/concert1.jpg" alt="concertcrowd"/>
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert1.jpg"></figure>     
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert2.jpg"></figure>  
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert3.jpg"></figure>  
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert4.jpg"></figure>  
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert5.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert6.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert7.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert8.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert9.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert10.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert11.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert12.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert13.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert14.jpg"></figure> 
+<figure><img alt="concertcrowd" class="lazy" data-src="images/concert15.jpg"></figure> 
+  
+<!-- <img src="images/concert1.jpg" alt="concertcrowd"/>
 <img src="images/concert2.jpg" alt="concertcrowd"/>
 <img src="images/concert3.jpg" alt="concertcrowd"/>
 <img src="images/concert4.jpg" alt="concertcrowd"/>
@@ -90,7 +106,7 @@
 <img src="images/concert12.jpg" alt="concertcrowd"/>
 <img src="images/concert13.jpg" alt="concertcrowd"/>
 <img src="images/concert14.jpg" alt="concertcrowd"/>
-<img src="images/concert15.jpg" alt="concertcrowd"/>
+<img src="images/concert15.jpg" alt="concertcrowd"/> -->
 
      </section>
 
@@ -99,6 +115,13 @@
     <footer>
       <p>&copy; 2020 Kristin Andrews &bull; Login</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    
+    <script>
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy", 
+      threshold: 0
+  });
+</script>
   </body>
 </html>

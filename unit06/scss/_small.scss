@@ -170,6 +170,19 @@ footer p {
   margin-bottom: 7%;
 }
 
-.concertpics img {
-width: 100%;
+// .concertpics img {
+// width: 100%;
+// }
+
+.concertpics figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 35%; /* You define this doing image height / width * 100% */
+  position: relative;
+  margin:0;
+}
+.concertpics figure img {
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
