@@ -93,6 +93,7 @@ main {
   padding-bottom: 4%;
   padding-left: 2%;
   padding-right: 2%;
+
  
   p {
     padding: 0.5rem 0;
@@ -108,13 +109,42 @@ main {
 .member_stories {
   display: grid;
   grid-template-columns: 1fr;
-  // column-gap: 10rem;
+  
   
 }
 
 
 
+figure.circle img {
+  float: right;
+  clip-path: circle(50%);
+  shape-outside: circle(50%)
+}
 
+
+
+figure.quarter img {
+  float: right; 
+  clip-path: circle(94% at 100% 0);
+shape-outside: circle(94% at 100% 0);
+}
+
+
+figure.bigtriangle img {
+  float: right;
+  clip-path: polygon(50% 0, 0 93%, 100% 93%);
+  shape-outside: polygon(50% 0, 0 93%, 100% 93%);
+}
+
+figure.corner-triangle img {
+  float: right; 
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  shape-outside: polygon(100% 0, 0 0, 100% 100%);
+}
+
+// div.person {
+//   display: flex;
+// }
 
 
 
@@ -136,3 +166,10 @@ footer p {
 
 
 
+.member_stories h2 {
+  margin-bottom: 7%;
+}
+
+.concertpics img {
+width: 100%;
+}
