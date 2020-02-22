@@ -93,6 +93,7 @@ main {
   padding-bottom: 4%;
   padding-left: 2%;
   padding-right: 2%;
+ 
   p {
     padding: 0.5rem 0;
     line-height: 1.5rem;
@@ -103,6 +104,25 @@ main {
     color: rgb(58, 143, 58); 
   }
 }
+
+.member_stories {
+  display: grid;
+  grid-template-columns: 1fr;
+  // column-gap: 10rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   display: flex;
