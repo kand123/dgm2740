@@ -4,16 +4,17 @@ main {
     
 }
 header h1 {
-    padding-left: .4rem;
+    padding-left: .6rem;
 
 }
 
 header h2 {
-    padding-left: .4rem;
+    padding-left: .6rem;
+    padding-bottom: .8rem;
 }
 
 header h1 {
-    padding-top: 1.7rem;
+    padding-top: 3rem;
 }
 
 ul.menu li {
@@ -29,5 +30,7 @@ ul.menu {
 .member_stories {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    column-gap: 1.7%;
   }
+
+  

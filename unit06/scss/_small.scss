@@ -2,7 +2,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Condensed', ;
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -15,22 +15,32 @@ html {
 header,
 nav,
 main,
-footer {
+footer, #barline {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+// Header
+
+
 header {
   background-color: black;
+  background-image: url(../images/lightning.png);
+  background-position-y: 55%;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+ 
 }
 
+
+
 header h1 {
-  font-size: 2rem;
-  padding-top: 2.7rem;
+  font-size: 3.3rem;
+  padding-top: 2rem;
   padding-left: 2%;
   color: #fff;
-  
+  font-family: 'Lacquer', ;
 }
 
 header h2 {
@@ -38,11 +48,18 @@ header h2 {
   padding-left: 2%;
   color: #fff;
   font-size: 1.3rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.18rem;
 }
 
+#barline {
+  background-color: $secondaryBright;
+  padding: .3% 0;
+}
+
+// Nav
+
 nav {
-  background-color: lightblue;
+  background-color: $headerFooter;
 }
 
 ul.menu {
@@ -55,8 +72,8 @@ nav ul li:first-child a {
 nav ul li a {
   border-left: 1px solid rgb(95, 94, 94);
   display: block;
-  background-color: darken(#fff, 25%);
-  color: white;
+  background-color: darkgray;
+  color: #000;
   text-decoration: none;
   padding: 0.8rem 1rem;
 }
@@ -67,12 +84,12 @@ ul.menu li {
 }
 
 .active a {
-  background-color: rgb(143, 71, 45);
+  background-color: $activeState;
   color: #fff;
 }
 
 nav ul li a:hover {
-  background-color: lighten(rgb(143, 71, 45), 15%);
+  background-color: lighten($activeState, 15%);
   color: #000;
 }
 
@@ -80,13 +97,14 @@ nav ul li a {
   padding: 0.8rem 0.6rem;
 }
 
+
+// Main
+
 main h1 {
   font-size: 2rem;
   padding-top: 2.6rem;
-  padding-bottom: 1.7rem;
-  color: rgb(143, 71, 45);
-  color: lighten(rgb(143, 71, 45), 15%);
- 
+  padding-bottom: 1rem;
+  color: rgb(196, 13, 196);
 }
 
 main {
@@ -96,29 +114,39 @@ main {
 
  
   p {
-    padding: 0.5rem 0;
+    padding: 0;
     line-height: 1.5rem;
   }
   h2 {
-    font-size: 1.3rem;
-    padding: 1.8rem 1rem 0.1rem 0;
-    color: rgb(58, 143, 58); 
+    font-size: 1.4rem;
+    padding: 1rem 1rem 0.1rem 0;
+    color: $secondaryBright; 
   }
+}
+
+// Specific to bio section
+
+h2.subtitle {
+  font-size: 1.8rem;
+  color: rgb(196, 13, 196);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.member_stories h2 {
+  margin-bottom: 3%;
 }
 
 .member_stories {
   display: grid;
   grid-template-columns: 1fr;
-  
-  
 }
 
-
+// Images
 
 figure.circle img {
   float: right;
   clip-path: circle(50%);
-  shape-outside: circle(50%)
+  shape-outside: circle(53%)
 }
 
 
@@ -126,7 +154,7 @@ figure.circle img {
 figure.quarter img {
   float: right; 
   clip-path: circle(94% at 100% 0);
-shape-outside: circle(94% at 100% 0);
+shape-outside: circle(96% at 100% 0);
 }
 
 
@@ -134,45 +162,30 @@ figure.bigtriangle img {
   float: right;
   clip-path: polygon(50% 0, 0 93%, 100% 93%);
   shape-outside: polygon(50% 0, 0 93%, 100% 93%);
+  margin: .21rem; 
 }
 
 figure.corner-triangle img {
   float: right; 
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   shape-outside: polygon(100% 0, 0 0, 100% 100%);
+  margin: .16rem;
 }
 
-// div.person {
-//   display: flex;
-// }
-
-
-
-
-
-
-
+// Footer
 
 
 footer {
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  background-color: $headerFooter;
 }
 
 footer p {
   padding: 1.2rem;
 }
 
-
-
-.member_stories h2 {
-  margin-bottom: 7%;
-}
-
-// .concertpics img {
-// width: 100%;
-// }
+// Lazy load images
 
 .concertpics figure {
   width: 100%;

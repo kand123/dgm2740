@@ -90,7 +90,7 @@ input, select {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto Condensed"; }
 
 /*  apply a natural box layout model to all elements  */
 * {
@@ -101,29 +101,38 @@ html {
 header,
 nav,
 main,
-footer {
+footer, #barline {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto; }
 
 header {
-  background-color: black; }
+  background-color: black;
+  background-image: url(../images/lightning.png);
+  background-position-y: 55%;
+  background-position-x: 90%;
+  background-repeat: no-repeat; }
 
 header h1 {
-  font-size: 2rem;
-  padding-top: 2.7rem;
+  font-size: 3.3rem;
+  padding-top: 2rem;
   padding-left: 2%;
-  color: #fff; }
+  color: #fff;
+  font-family: "Lacquer"; }
 
 header h2 {
   padding: 0.5rem 0;
   padding-left: 2%;
   color: #fff;
   font-size: 1.3rem;
-  letter-spacing: 0.3rem; }
+  letter-spacing: 0.18rem; }
+
+#barline {
+  background-color: #065bf8;
+  padding: .3% 0; }
 
 nav {
-  background-color: lightblue; }
+  background-color: lightgray; }
 
 ul.menu {
   display: flex; }
@@ -134,8 +143,8 @@ nav ul li:first-child a {
 nav ul li a {
   border-left: 1px solid #5f5e5e;
   display: block;
-  background-color: #bfbfbf;
-  color: white;
+  background-color: darkgray;
+  color: #000;
   text-decoration: none;
   padding: 0.8rem 1rem; }
 
@@ -144,11 +153,11 @@ ul.menu li {
   text-align: center; }
 
 .active a {
-  background-color: #8f472d;
+  background-color: #c40dc4;
   color: #fff; }
 
 nav ul li a:hover {
-  background-color: #c46644;
+  background-color: #f12cf1;
   color: #000; }
 
 nav ul li a {
@@ -157,21 +166,29 @@ nav ul li a {
 main h1 {
   font-size: 2rem;
   padding-top: 2.6rem;
-  padding-bottom: 1.7rem;
-  color: #8f472d;
-  color: #c46644; }
+  padding-bottom: 1rem;
+  color: #c40dc4; }
 
 main {
   padding-bottom: 4%;
   padding-left: 2%;
   padding-right: 2%; }
   main p {
-    padding: 0.5rem 0;
+    padding: 0;
     line-height: 1.5rem; }
   main h2 {
-    font-size: 1.3rem;
-    padding: 1.8rem 1rem 0.1rem 0;
-    color: #3a8f3a; }
+    font-size: 1.4rem;
+    padding: 1rem 1rem 0.1rem 0;
+    color: #065bf8; }
+
+h2.subtitle {
+  font-size: 1.8rem;
+  color: #c40dc4;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
+.member_stories h2 {
+  margin-bottom: 3%; }
 
 .member_stories {
   display: grid;
@@ -180,22 +197,24 @@ main {
 figure.circle img {
   float: right;
   clip-path: circle(50%);
-  shape-outside: circle(50%); }
+  shape-outside: circle(53%); }
 
 figure.quarter img {
   float: right;
   clip-path: circle(94% at 100% 0);
-  shape-outside: circle(94% at 100% 0); }
+  shape-outside: circle(96% at 100% 0); }
 
 figure.bigtriangle img {
   float: right;
   clip-path: polygon(50% 0, 0 93%, 100% 93%);
-  shape-outside: polygon(50% 0, 0 93%, 100% 93%); }
+  shape-outside: polygon(50% 0, 0 93%, 100% 93%);
+  margin: .21rem; }
 
 figure.corner-triangle img {
   float: right;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
-  shape-outside: polygon(100% 0, 0 0, 100% 100%); }
+  shape-outside: polygon(100% 0, 0 0, 100% 100%);
+  margin: .16rem; }
 
 footer {
   display: flex;
@@ -204,9 +223,6 @@ footer {
 
 footer p {
   padding: 1.2rem; }
-
-.member_stories h2 {
-  margin-bottom: 7%; }
 
 .concertpics figure {
   width: 100%;
@@ -228,20 +244,21 @@ footer p {
   .member_stories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1.7%; } }
+    column-gap: 2%; } }
 @media only screen and (min-width: 960px) {
   main {
     padding-left: 1%;
     padding-right: 1%; }
 
   header h1 {
-    padding-left: .4rem; }
+    padding-left: .6rem; }
 
   header h2 {
-    padding-left: .4rem; }
+    padding-left: .6rem;
+    padding-bottom: .8rem; }
 
   header h1 {
-    padding-top: 1.7rem; }
+    padding-top: 3rem; }
 
   ul.menu li {
     width: auto;
@@ -252,4 +269,5 @@ footer p {
 
   .member_stories {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.7%; } }
