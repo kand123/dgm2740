@@ -1,6 +1,7 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-shape-outside: circle();
+  shape-outside: circle();
   font-family: 'Roboto Condensed', ;
 }
 
@@ -152,8 +153,8 @@ figure.circle img {
 figure.quarter img {
   float: right; 
   clip-path: circle(94% at 100% 0);
-// shape-outside: circle(96% at 100% 0);
-shape-outside: inset(2px 2px 2px 2px);
+shape-outside: circle(96% at 100% 0);
+// shape-outside: inset(2px 2px 2px 2px);
 }
 
 
