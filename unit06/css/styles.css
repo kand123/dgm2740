@@ -193,13 +193,12 @@ h2.subtitle {
 figure.circle img {
   float: right;
   clip-path: circle(50%);
-  -webkit-shape-outside: circle(53%);
   shape-outside: circle(53%); }
 
 figure.quarter img {
   float: right;
   clip-path: circle(94% at 100% 0);
-  shape-outside: circle(); }
+  shape-outside: circle(96% at 100% 0); }
 
 figure.bigtriangle img {
   float: right;
