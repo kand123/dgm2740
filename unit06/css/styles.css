@@ -194,10 +194,8 @@ h2.subtitle {
 
 figure.circle img {
   float: right;
-  clip-path: circle(50%); }
-
-figure.circle {
-  shape-outside: circle(53%); }
+  clip-path: circle(50%);
+  shape-outside: circle(50%); }
 
 figure.quarter img {
   float: right;
