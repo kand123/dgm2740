@@ -1,0 +1,143 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  
+  font-family: 'Roboto Condensed', ;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  
+  box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Header
+
+
+header {
+  background-color: black;
+  background-position-y: 55%;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+ 
+}
+
+
+
+header h1 {
+  font-size: 3.3rem;
+  padding-top: 2rem;
+  padding-left: 2%;
+  color: #fff;
+}
+
+header h2 {
+  padding: 0.5rem 0;
+  padding-left: 2%;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.18rem;
+}
+
+
+
+// Nav
+
+nav {
+  background-color: #eee;
+}
+
+ul.menu {
+  display: flex;
+}
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a {
+  border-left: 1px solid rgb(95, 94, 94);
+  display: block;
+  background-color: darkgray;
+  color: #000;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+}
+
+ul.menu li {
+  width: 25%;
+  text-align: center;
+}
+
+.active a {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: lighten(#333, 15%);
+  color: #000;
+}
+
+nav ul li a {
+  padding: 0.8rem 0.6rem;
+}
+
+
+// Main
+
+main h1 {
+  font-size: 2rem;
+  padding-top: 2.6rem;
+  padding-bottom: 1rem;
+  color: rgb(196, 13, 196);
+}
+
+main {
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+ 
+  p {
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    padding: 1rem 1rem 0.1rem 0;
+    color: #123456; 
+  }
+}
+
+// Specific to bio section
+
+h2.subtitle {
+  font-size: 1.8rem;
+  color: rgb(196, 13, 196);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+
+
+// Footer
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+
+footer p {
+  padding: 1.2rem;
+}
+

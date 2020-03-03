@@ -1,0 +1,36 @@
+main {
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+header h1 {
+    padding-left: .6rem;
+
+}
+
+header h2 {
+    padding-left: .6rem;
+    padding-bottom: .8rem;
+}
+
+header h1 {
+    padding-top: 3rem;
+}
+
+ul.menu li {
+    width: auto;
+    text-align: center;
+  }
+
+
+ul.menu {
+    padding-left: .6rem;
+}
+
+.member_stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.7%;
+  }
+
+  
