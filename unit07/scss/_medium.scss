@@ -10,3 +10,8 @@ nav ul li a {
     grid-template-columns: 1fr 1fr;
     column-gap: 2%;
   }
+
+  @for $i from 1 through 12 {
+    $w:($i/12) * 100%;
+    .medium-#{$i}{flex-basis: $w;}
+  }

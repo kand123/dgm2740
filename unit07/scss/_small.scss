@@ -97,34 +97,44 @@ main h1 {
   font-size: 2rem;
   padding-top: 2.6rem;
   padding-bottom: 1rem;
-  color: rgb(196, 13, 196);
+
 }
 
-main {
-  padding-bottom: 4%;
-  padding-left: 2%;
-  padding-right: 2%;
+div.flexed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  $w:($i/12) * 100%;
+  .small-#{$i}{flex-basis: $w;}
+}
+
+// main {
+//   padding-bottom: 4%;
+//   padding-left: 2%;
+//   padding-right: 2%;
 
  
-  p {
-    padding: 0;
-    line-height: 1.5rem;
-  }
-  h2 {
-    font-size: 1.4rem;
-    padding: 1rem 1rem 0.1rem 0;
-    color: #123456; 
-  }
-}
+//   p {
+//     padding: 0;
+//     line-height: 1.5rem;
+//   }
+//   h2 {
+//     font-size: 1.4rem;
+//     padding: 1rem 1rem 0.1rem 0;
+//     color: #123456; 
+//   }
+// }
 
 // Specific to bio section
 
-h2.subtitle {
-  font-size: 1.8rem;
-  color: rgb(196, 13, 196);
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
+// h2.subtitle {
+//   font-size: 1.8rem;
+//   color: rgb(196, 13, 196);
+//   margin-bottom: 2rem;
+//   margin-top: 2rem;
+// }
 
 
 
