@@ -23,14 +23,17 @@ footer {
 
 
 header {
-  background-color: black;
+  
   background-position-y: 55%;
   background-position-x: 90%;
   background-repeat: no-repeat;
  
 }
 
-
+#headerwrap {
+  background-color: black;
+  border-top: 8px solid orange;
+}
 
 header h1 {
   font-size: 3.3rem;
@@ -104,7 +107,7 @@ div.flexed {
   display: flex;
   flex-wrap: wrap;
 }
-
+.column {padding: .5rem $gutter;}
 @for $i from 1 through 12 {
   $w:($i/12) * 100%;
   .small-#{$i}{flex-basis: $w;}
@@ -140,14 +143,34 @@ div.flexed {
 
 // Footer
 
+#footerwrap {
+  background-color: green;
+}
 
 footer {
   display: flex;
   justify-content: center;
-  background-color: green;
+  
 }
 
-footer p {
-  padding: 1.2rem;
+
+
+.social {
+  background-color: black;
+  display: flex;
+  padding: 1rem 0;
+  
 }
 
+.social a {
+  // flex-basis: 25%;
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+text-decoration: none;
+padding: 0 1.2rem;
+}
+
+.social a:hover {
+  color: orange;
+}

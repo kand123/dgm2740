@@ -103,10 +103,13 @@ footer {
   margin-right: auto; }
 
 header {
-  background-color: black;
   background-position-y: 55%;
   background-position-x: 90%;
   background-repeat: no-repeat; }
+
+#headerwrap {
+  background-color: black;
+  border-top: 8px solid orange; }
 
 header h1 {
   font-size: 3.3rem;
@@ -162,6 +165,9 @@ div.flexed {
   display: flex;
   flex-wrap: wrap; }
 
+.column {
+  padding: 0.5rem 2vw; }
+
 .small-1 {
   flex-basis: 8.3333333333%; }
 
@@ -198,13 +204,27 @@ div.flexed {
 .small-12 {
   flex-basis: 100%; }
 
-footer {
-  display: flex;
-  justify-content: center;
+#footerwrap {
   background-color: green; }
 
-footer p {
-  padding: 1.2rem; }
+footer {
+  display: flex;
+  justify-content: center; }
+
+.social {
+  background-color: black;
+  display: flex;
+  padding: 1rem 0; }
+
+.social a {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  text-decoration: none;
+  padding: 0 1.2rem; }
+
+.social a:hover {
+  color: orange; }
 
 @media only screen and (min-width: 560px) {
   nav ul li a {
@@ -311,6 +331,9 @@ footer p {
     flex-basis: 91.6666666667%; }
 
   .large-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  .social a {
+    font-size: 2.8rem; } }
 
 /*# sourceMappingURL=styles.css.map */
