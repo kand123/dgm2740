@@ -2,7 +2,7 @@
 html {
   
   font-family: 'Roboto Condensed', ;
-
+  // font-family: 'PT Sans', sans-serif;
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -193,11 +193,11 @@ figure img {
 
 .blogtext h3 {
   font-size: 1.3rem;
-  padding: .3rem;
+  padding: .6rem;
 }
 
 .blogtext p {
-  padding: .35rem;
+  padding: .6rem;
 }
 
 .bio {
@@ -233,9 +233,8 @@ figure img {
 }
 
 .card {
-  // padding: 0 .5rem;
   background-color: lightgray;
-  border: .3px solid gray;
+  border: .3px solid rgb(163, 162, 162);
 }
 
 .bloglink {

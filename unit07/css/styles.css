@@ -252,10 +252,10 @@ figure img {
 
 .blogtext h3 {
   font-size: 1.3rem;
-  padding: .3rem; }
+  padding: .6rem; }
 
 .blogtext p {
-  padding: .35rem; }
+  padding: .6rem; }
 
 .bio {
   text-align: center;
@@ -281,7 +281,7 @@ figure img {
 
 .card {
   background-color: lightgray;
-  border: .3px solid gray; }
+  border: 0.3px solid #a3a2a2; }
 
 .bloglink {
   text-align: center;
