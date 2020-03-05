@@ -8,10 +8,23 @@ header h1 {
 
 }
 
+header h1 {
+    font-size: 2.5rem;
+    // padding-top: 12rem;
+    margin-top: 2.6rem;
+    padding-top: 3rem;
+  }
+
 header h2 {
     padding-left: .6rem;
-    padding-bottom: .8rem;
+    // padding-bottom: .8rem;
+    
 }
+
+header h2 {
+    font-size: 1rem;
+    letter-spacing: 0.215rem;
+  }
 
 header h1 {
     padding-top: 3rem;
@@ -27,11 +40,11 @@ header h1 {
 //     padding-left: .6rem;
 // }
 
-.member_stories {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1.7%;
-  }
+// .member_stories {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//     column-gap: 1.7%;
+//   }
 
   @for $i from 1 through 12 {
     $w:($i/12) * 100%;
@@ -43,3 +56,24 @@ header h1 {
     font-size: 2.8rem;
   
   }
+
+//   .wrap{
+//     // padding-top: 3.4rem;
+//     // margin-top: 2rem;
+//   }
+
+  div.logo {
+      align-items: flex-start;
+      
+  }
+
+  .ctabutton {
+    background-color: $primaryColor;
+    width: 100%; 
+    padding: 1.6rem 0;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    color: #fff;
+    
+  }
+

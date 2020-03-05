@@ -2,8 +2,12 @@
 ul.menu li {
     width: auto;
     text-align: center;
+    font-size: 1.22rem;
   }
 
+  header {
+      padding-bottom: 1rem;
+  }
 
 ul.menu {
     padding-left: .4rem;
@@ -14,13 +18,72 @@ nav ul li a {
     padding: .8rem 1.6rem;
 }
 
-.member_stories {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2%;
-  }
+// .member_stories {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     column-gap: 2%;
+//   }
 
   @for $i from 1 through 12 {
     $w:($i/12) * 100%;
     .medium-#{$i}{flex-basis: $w;}
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    margin-top: 1.6rem;
+    // letter-spacing: .1rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+  
+
+//   .wrap{
+    
+    
+//   }
+
+  .wrap input {
+    height: 33px; 
+    width: 12rem;
+    font-size: .8rem;
+  }
+
+  .bio button {
+    font-size: .8rem;
+   
+  }
+div.logo {
+    padding: 0; 
+    margin: 0; 
+}
+
+.ctabutton {
+    background-color: $primaryColor;
+    width: 100%; 
+    padding: 1.4rem 0;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    color: #fff;
+    margin: 0 $gutter;
+  }
+
+  .buttondiv {
+      margin:0;
+  }
+
+  .bio button {
+    margin: 1.3rem; 
+    
+    padding: .6rem 1.5rem;
+    // width: 50%;
+    background-color: lighten($color:$accentColor, $amount: 15%);
+    color: #fff;
+    font-size: .7rem;
+    border-radius: 6px;
+    // height: 40px;
   }

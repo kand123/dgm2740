@@ -2,7 +2,6 @@
 html {
   
   font-family: 'Roboto Condensed', ;
-  // font-family: 'PT Sans', sans-serif;
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -24,16 +23,15 @@ footer {
 
 
 header {
-  // background-position-y: 55%;
-  // background-position-x: 90%;
-  // background-repeat: no-repeat;
  display: flex;
  justify-content: space-between;
+ padding-bottom: 5%;
 }
 // search button
 .wrap{
-  padding-top: 3rem;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
+  align-self: flex-end;
+  // margin-top: 3.5rem;
 }
 
 #headerwrap {
@@ -42,23 +40,24 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: -.08rem;
-  padding-top: 2rem;
-  margin-top: 1.6rem;
+  padding-top: .8rem;
+  margin-top: 0;
   padding-left: 2%;
   color: #fff;
-  font-family: 'Noto Serif', serif;
-  font-family: 'Anton', sans-serif;
+
   font-family: 'Fjalla One', sans-serif;
 }
 
 header h2 {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
   padding-left: 2%;
   color: #fff;
   font-size: 1rem;
+  font-size: .8rem;
   letter-spacing: 0.215rem;
+  letter-spacing: .1rem;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -89,7 +88,7 @@ nav ul li a {
 
 ul.menu li {
   width: 100%;
-  text-align: center;
+  font-size: 1.4rem;
 }
 
 .active a {
@@ -171,13 +170,12 @@ figure img {
 
 .ctabutton {
   background-color: $primaryColor;
-  width: 100%; 
-  padding: 1.6rem 0;
-  font-size: 1.5rem;
+  width: 100%;
+  padding: 1.2rem 0;
+  font-size: 1.2rem;
   border-radius: 6px;
   color: #fff;
-  // margin-top: 3rem;
-  // margin-bottom: 4rem;
+//  margin: 0 auto;
 }
 
 .blog img {
@@ -187,7 +185,7 @@ figure img {
 
 .blogtext {
   background-color: lightgray;
-  // padding: 0 .5rem .5rem .5rem;
+  
 
 }
 
@@ -197,7 +195,7 @@ figure img {
 }
 
 .blogtext p {
-  padding: .6rem;
+  padding: .9rem .6rem;
 }
 
 .bio {
@@ -208,7 +206,7 @@ figure img {
   justify-content: center;
   align-items: center;
   
-  // margin: 0 .3rem;
+
 }
 .bio img {
   width: 100%;
@@ -218,11 +216,11 @@ figure img {
 .bio button {
   margin: 1.3rem; 
   
-  padding: .6rem 1.5rem;
+  padding: .9rem 1.5rem;
   // width: 50%;
   background-color: lighten($color:$accentColor, $amount: 15%);
   color: #fff;
-  font-size: .8rem;
+  font-size: .7rem;
   border-radius: 6px;
   // height: 40px;
 }
@@ -240,7 +238,7 @@ figure img {
 .bloglink {
   text-align: center;
   background-color: $primaryColor;
-  padding: .5rem 0;
+  padding: .7rem 0;
   color: #fff;
 }
 
@@ -275,10 +273,21 @@ figure img {
 }
 
 .wrap {
-  padding-right: 1%;
+  padding-right: 1.5%;
 }
 
 .wrap input {
-  height: 30px; 
+  height: 40px; 
   width: 10rem;
+  font-size: .8rem;
+}
+
+
+.logo {
+  display: flex;
+ flex-direction: column;
+}
+
+.buttondiv {
+  margin: 0 auto;
 }
