@@ -27,27 +27,39 @@ header {
   background-position-y: 55%;
   background-position-x: 90%;
   background-repeat: no-repeat;
- 
+ display: flex;
+ justify-content: space-between;
+}
+
+.wrap{
+  padding-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 #headerwrap {
-  background-color: black;
-  border-top: 8px solid orange;
+  background-color: $primaryColor;
+  border-top: 10px solid rgb(61, 61, 61);
 }
 
 header h1 {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
+  letter-spacing: -.08rem;
   padding-top: 2rem;
+  margin-top: 1.6rem;
   padding-left: 2%;
   color: #fff;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 header h2 {
   padding: 0.5rem 0;
   padding-left: 2%;
   color: #fff;
-  font-size: 1.3rem;
-  letter-spacing: 0.18rem;
+  font-size: 1rem;
+  letter-spacing: 0.215rem;
+  font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -86,7 +98,7 @@ ul.menu li {
 
 nav ul li a:hover {
   background-color: lighten(#333, 15%);
-  color: #000;
+  color: white;
 }
 
 nav ul li a {
@@ -106,6 +118,7 @@ main h1 {
 div.flexed {
   display: flex;
   flex-wrap: wrap;
+  margin: 4% 0;
 }
 .column {padding: .5rem $gutter;}
 @for $i from 1 through 12 {
@@ -113,38 +126,14 @@ div.flexed {
   .small-#{$i}{flex-basis: $w;}
 }
 
-// main {
-//   padding-bottom: 4%;
-//   padding-left: 2%;
-//   padding-right: 2%;
-
- 
-//   p {
-//     padding: 0;
-//     line-height: 1.5rem;
-//   }
-//   h2 {
-//     font-size: 1.4rem;
-//     padding: 1rem 1rem 0.1rem 0;
-//     color: #123456; 
-//   }
-// }
-
-// Specific to bio section
-
-// h2.subtitle {
-//   font-size: 1.8rem;
-//   color: rgb(196, 13, 196);
-//   margin-bottom: 2rem;
-//   margin-top: 2rem;
-// }
+// main 
 
 
 
 // Footer
 
 #footerwrap {
-  background-color: green;
+  background-color: $primaryColor;
 }
 
 footer {
@@ -156,7 +145,7 @@ footer {
 
 
 .social {
-  background-color: black;
+  
   display: flex;
   padding: 1rem 0;
   
@@ -173,4 +162,96 @@ padding: 0 1.2rem;
 
 .social a:hover {
   color: orange;
+}
+
+figure img {
+  width: 100%;
+}
+
+.ctabutton {
+  background-color: red;
+  width: 100%; 
+  padding: 1.4rem 0;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  // margin-top: 3rem;
+  // margin-bottom: 4rem;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blogtext {
+  background-color: lightgray;
+  padding: 0 .5rem .5rem .5rem;
+}
+
+.blogtext h3 {
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+.bio {
+  text-align: center;
+  
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+  // margin: 0 .3rem;
+}
+.bio img {
+  width: 100%;
+  
+}
+
+.bio button {
+  margin: 1.5rem; 
+  
+  padding: .25rem 1.1rem;
+  // width: 50%;
+  background-color: rgb(54, 154, 248);
+  font-size: .9rem;
+  border-radius: 6px;
+}
+
+.bio h2 {
+  margin: 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.card {
+  // padding: 0 .5rem;
+  background-color: lightgray;
+  border: .5px solid gray;
+}
+
+.bloglink {
+  text-align: center;
+  background-color: gray;
+  padding: .5rem 0;
+}
+
+.tip, .faq {
+  background-color: lightgray;
+  padding: .5rem;
+}
+
+.tip p, .faq p {
+  padding: .5rem 0;
+}
+
+.tip h3, .faq h3 {
+  font-size: 1.3rem;
+}
+
+.wrap {
+  padding-right: 1%;
+}
+
+.wrap input {
+  height: 30px; 
+  width: 10rem;
 }
