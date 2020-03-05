@@ -18,11 +18,7 @@ nav ul li a {
     padding: .8rem 1.6rem;
 }
 
-// .member_stories {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     column-gap: 2%;
-//   }
+
 
   @for $i from 1 through 12 {
     $w:($i/12) * 100%;
@@ -42,10 +38,6 @@ nav ul li a {
   }
   
 
-//   .wrap{
-    
-    
-//   }
 
   .wrap input {
     height: 33px; 
@@ -80,10 +72,10 @@ div.logo {
     margin: 1.3rem; 
     
     padding: .6rem 1.5rem;
-    // width: 50%;
+    
     background-color: lighten($color:$accentColor, $amount: 15%);
     color: #fff;
     font-size: .7rem;
     border-radius: 6px;
-    // height: 40px;
+    
   }

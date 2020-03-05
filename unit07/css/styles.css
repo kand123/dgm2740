@@ -102,6 +102,10 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 
+#headerwrap {
+  background-color: #0b0b68;
+  border-top: 10px solid #777; }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -110,10 +114,6 @@ header {
 .wrap {
   margin-top: 1rem;
   align-self: flex-end; }
-
-#headerwrap {
-  background-color: #0b0b68;
-  border-top: 10px solid #777; }
 
 header h1 {
   font-size: 1.5rem;
