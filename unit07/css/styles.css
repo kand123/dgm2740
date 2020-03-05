@@ -103,9 +103,6 @@ footer {
   margin-right: auto; }
 
 header {
-  background-position-y: 55%;
-  background-position-x: 90%;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between; }
 
@@ -115,7 +112,7 @@ header {
 
 #headerwrap {
   background-color: #0b0b68;
-  border-top: 10px solid #3d3d3d; }
+  border-top: 10px solid #777; }
 
 header h1 {
   font-size: 2.5rem;
@@ -140,7 +137,8 @@ nav {
   background-color: #eee; }
 
 ul.menu {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 nav ul li:first-child a {
   border-left: none; }
@@ -154,19 +152,16 @@ nav ul li a {
   padding: 0.8rem 1rem; }
 
 ul.menu li {
-  width: 25%;
+  width: 100%;
   text-align: center; }
 
 .active a {
-  background-color: #333;
+  background-color: #e40404;
   color: #fff; }
 
 nav ul li a:hover {
-  background-color: #595959;
+  background-color: #b20303;
   color: white; }
-
-nav ul li a {
-  padding: 0.8rem 0.6rem; }
 
 main h1 {
   font-size: 2rem;
@@ -236,28 +231,31 @@ footer {
   padding: 0 1.2rem; }
 
 .social a:hover {
-  color: orange; }
+  color: #fc3939; }
 
 figure img {
   width: 100%; }
 
 .ctabutton {
-  background-color: red;
+  background-color: #0b0b68;
   width: 100%;
-  padding: 1.4rem 0;
+  padding: 1.6rem 0;
   font-size: 1.5rem;
-  border-radius: 6px; }
+  border-radius: 6px;
+  color: #fff; }
 
 .blog img {
   width: 100%; }
 
 .blogtext {
-  background-color: lightgray;
-  padding: 0 .5rem .5rem .5rem; }
+  background-color: lightgray; }
 
 .blogtext h3 {
   font-size: 1.3rem;
-  margin-bottom: .5rem; }
+  padding: .3rem; }
+
+.blogtext p {
+  padding: .35rem; }
 
 .bio {
   text-align: center;
@@ -270,10 +268,11 @@ figure img {
   width: 100%; }
 
 .bio button {
-  margin: 1.5rem;
-  padding: .25rem 1.1rem;
-  background-color: #369af8;
-  font-size: .9rem;
+  margin: 1.3rem;
+  padding: .6rem 1.5rem;
+  background-color: #fc3939;
+  color: #fff;
+  font-size: .8rem;
   border-radius: 6px; }
 
 .bio h2 {
@@ -282,12 +281,23 @@ figure img {
 
 .card {
   background-color: lightgray;
-  border: .5px solid gray; }
+  border: .3px solid gray; }
 
 .bloglink {
   text-align: center;
-  background-color: gray;
-  padding: .5rem 0; }
+  background-color: #0b0b68;
+  padding: .5rem 0;
+  color: #fff; }
+
+.tip a:link, .faq a:link {
+  color: #0b0b68;
+  text-decoration: none; }
+
+.tip a:visited, .faq a:visited {
+  color: #0b0b68; }
+
+.tip a:hover, .faq a:hover {
+  color: #e40404; }
 
 .tip, .faq {
   background-color: lightgray;
@@ -297,7 +307,8 @@ figure img {
   padding: .5rem 0; }
 
 .tip h3, .faq h3 {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  color: #0b0b68; }
 
 .wrap {
   padding-right: 1%; }
@@ -307,6 +318,14 @@ figure img {
   width: 10rem; }
 
 @media only screen and (min-width: 560px) {
+  ul.menu li {
+    width: auto;
+    text-align: center; }
+
+  ul.menu {
+    padding-left: .4rem;
+    flex-direction: row; }
+
   nav ul li a {
     padding: .8rem 1.6rem; }
 
@@ -364,13 +383,6 @@ figure img {
 
   header h1 {
     padding-top: 3rem; }
-
-  ul.menu li {
-    width: auto;
-    text-align: center; }
-
-  ul.menu {
-    padding-left: .6rem; }
 
   .member_stories {
     display: grid;

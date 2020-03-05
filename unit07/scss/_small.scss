@@ -2,6 +2,7 @@
 html {
   
   font-family: 'Roboto Condensed', ;
+
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -23,14 +24,13 @@ footer {
 
 
 header {
-  
-  background-position-y: 55%;
-  background-position-x: 90%;
-  background-repeat: no-repeat;
+  // background-position-y: 55%;
+  // background-position-x: 90%;
+  // background-repeat: no-repeat;
  display: flex;
  justify-content: space-between;
 }
-
+// search button
 .wrap{
   padding-top: 3rem;
   margin-top: 3.5rem;
@@ -38,7 +38,7 @@ header {
 
 #headerwrap {
   background-color: $primaryColor;
-  border-top: 10px solid rgb(61, 61, 61);
+  border-top: 10px solid #777;
 }
 
 header h1 {
@@ -72,6 +72,7 @@ nav {
 
 ul.menu {
   display: flex;
+  flex-direction: column;
 }
 nav ul li:first-child a {
   border-left: none;
@@ -87,23 +88,23 @@ nav ul li a {
 }
 
 ul.menu li {
-  width: 25%;
+  width: 100%;
   text-align: center;
 }
 
 .active a {
-  background-color: #333;
+  background-color: $accentColor;
   color: #fff;
 }
 
 nav ul li a:hover {
-  background-color: lighten(#333, 15%);
+  background-color: darken($accentColor, 10%);
   color: white;
 }
 
-nav ul li a {
-  padding: 0.8rem 0.6rem;
-}
+// nav ul li a {
+//   padding: 0.8rem 0.6rem;
+// }
 
 
 // Main
@@ -161,7 +162,7 @@ padding: 0 1.2rem;
 }
 
 .social a:hover {
-  color: orange;
+  color: lighten($color: $accentColor, $amount: 15%);
 }
 
 figure img {
@@ -169,27 +170,34 @@ figure img {
 }
 
 .ctabutton {
-  background-color: red;
+  background-color: $primaryColor;
   width: 100%; 
-  padding: 1.4rem 0;
+  padding: 1.6rem 0;
   font-size: 1.5rem;
   border-radius: 6px;
+  color: #fff;
   // margin-top: 3rem;
   // margin-bottom: 4rem;
 }
 
 .blog img {
   width: 100%;
+
 }
 
 .blogtext {
   background-color: lightgray;
-  padding: 0 .5rem .5rem .5rem;
+  // padding: 0 .5rem .5rem .5rem;
+
 }
 
 .blogtext h3 {
   font-size: 1.3rem;
-  margin-bottom: .5rem;
+  padding: .3rem;
+}
+
+.blogtext p {
+  padding: .35rem;
 }
 
 .bio {
@@ -208,13 +216,15 @@ figure img {
 }
 
 .bio button {
-  margin: 1.5rem; 
+  margin: 1.3rem; 
   
-  padding: .25rem 1.1rem;
+  padding: .6rem 1.5rem;
   // width: 50%;
-  background-color: rgb(54, 154, 248);
-  font-size: .9rem;
+  background-color: lighten($color:$accentColor, $amount: 15%);
+  color: #fff;
+  font-size: .8rem;
   border-radius: 6px;
+  // height: 40px;
 }
 
 .bio h2 {
@@ -225,13 +235,29 @@ figure img {
 .card {
   // padding: 0 .5rem;
   background-color: lightgray;
-  border: .5px solid gray;
+  border: .3px solid gray;
 }
 
 .bloglink {
   text-align: center;
-  background-color: gray;
+  background-color: $primaryColor;
   padding: .5rem 0;
+  color: #fff;
+}
+
+.tip a:link, .faq a:link {
+  color: $primaryColor;
+  text-decoration: none;
+}
+
+
+
+.tip a:visited, .faq a:visited {
+  color: $primaryColor;
+}
+
+.tip a:hover, .faq a:hover{
+  color: $accentColor;
 }
 
 .tip, .faq {
@@ -241,10 +267,12 @@ figure img {
 
 .tip p, .faq p {
   padding: .5rem 0;
+  
 }
 
 .tip h3, .faq h3 {
   font-size: 1.3rem;
+  color: $primaryColor;
 }
 
 .wrap {
