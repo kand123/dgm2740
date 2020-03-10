@@ -2,6 +2,7 @@
 html {
   
   font-family: 'Roboto Condensed', ;
+  font-family: 'Oswald', sans-serif;
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -12,7 +13,7 @@ html {
 
 
 
-main
+main, footer
 {
   max-width: 80rem;
   margin-left: auto;
@@ -22,39 +23,48 @@ main
 
 // Header
 
-#headerwrap {
-  background-color: #fff;
-  border-top: 10px solid #777;
-}
+// #headerwrap {
+//   background-color: #fff;
+//   border-top: 10px solid #777;
+  
+// }
 header {
  display: flex;
  justify-content: space-between;
- padding-bottom: 5%;
- background-color: black;
+//  padding-bottom: 2%;
+ background-color: #222;
+ background-image: url(../images/newslogo.png);
+ background-repeat: no-repeat;
+ background-position: 1% 10%;
+ background-size: 80px;
+ padding-bottom: 12%;
 }
 
 
-header h1 {
-  font-size: 1.5rem;
-  letter-spacing: -.08rem;
-  padding-top: .8rem;
-  margin-top: 0;
-  padding-left: 2%;
-  color: #fff;
-
-  font-family: 'Fjalla One', sans-serif;
+header h1, header h2 {
+  visibility: hidden;
 }
+// header h1 {
+//   font-size: 1.5rem;
+//   letter-spacing: -.08rem;
+//   padding-top: .8rem;
+//   margin-top: 0;
+//   padding-left: 2%;
+//   color: #fff;
 
-header h2 {
-  padding: 0.5rem 0 0 0;
-  padding-left: 2%;
-  color: #fff;
-  font-size: 1rem;
-  font-size: .8rem;
-  letter-spacing: 0.215rem;
-  letter-spacing: .1rem;
-  font-family: 'PT Sans', sans-serif;
-}
+//   font-family: 'Fjalla One', sans-serif;
+// }
+
+// header h2 {
+//   padding: 0.5rem 0 0 0;
+//   padding-left: 2%;
+//   color: #fff;
+//   font-size: 1rem;
+//   font-size: .8rem;
+//   letter-spacing: 0.215rem;
+//   letter-spacing: .1rem;
+//   font-family: 'PT Sans', sans-serif;
+// }
 
 
 // Nav
@@ -64,12 +74,14 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
-  color: #555;
+  color: #eee;
 }
 
 
 nav {
-  background-color: #ccc;
+  background-color: rgb(23, 35, 143);
+  margin-bottom: 2%;
+  
 }
 
 nav ul {
@@ -82,17 +94,20 @@ nav ul li a {
   display: block;
   padding: .8rem 2%;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   border-top: 1px solid rgba(0,0,0,0.5)
 }
 nav ul li.active a {
-  background-color: #000;
-  color: #fff;
+  background-color: #FFC705;
+  color:#000;
 }
 
 nav ul li a:hover {
-  background-color: rgba(0,0,0,0.4)
+  background-color: lighten(#FFC705, 15%);
+  color: #000;
 }
+
+nav ul.hide {display:none}
 
 // ul.menu {
 //   display: flex;
@@ -125,13 +140,49 @@ nav ul li a:hover {
 
 
 // Main
-
-main h1 {
-  font-size: 2rem;
-  padding-top: 2.6rem;
-  padding-bottom: 1rem;
-
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  figure:nth-child(1){
+    grid-column: 1/span 2;
+    // grid-row: 1/span 2;
+    justify-content:center;
+  }
 }
+
+// main {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-template-rows: auto;
+//   figure:nth-child(1){
+//     grid-column: 1/span 3;
+//     grid-row: 1/span 2;
+//     justify-content:center;
+    
+//   }
+// }
+
+
+
+
+figure {
+  text-align: center;
+  padding: .7rem 1vw;
+}
+
+
+
+figure img {
+  width: 100%;
+}
+
+// main h1 {
+//   font-size: 2rem;
+//   padding-top: 2.6rem;
+//   padding-bottom: 1rem;
+
+// }
 
 // div.flexed {
 //   display: flex;
@@ -143,17 +194,67 @@ main h1 {
 //   $w:($i/12) * 100%;
 //   .small-#{$i}{flex-basis: $w;}
 // }
-
+figcaption {
+  padding: .5rem 0;
+}
 
 
 // Footer
 
-// #footerwrap {
-//   background-color: $primaryColor;
-// }
+#footerwrap {
+  background-color: #222;
+  margin-top: 3%;
+}
+
+#footerLinks {
+  display: grid;
+  // justify-content: center;
+  grid-template-columns: 100%;
+  column-gap: 2%;
+  padding: 4% 6%;
+  // align-items: center;
+  align-items: flex-start;
+  
+  // padding: 3rem 2vw 5rem 2vw;
+}
+
+
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: black;
+  color: white;
+}
+
+// .col1, .col2, .col3, .col4 {
+  
+// }
+
+footer a {
+  // padding: 1%;
+  // margin: .0001rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: .95rem;
+}
+
+footer a:hover {
+  color: red;
+  color: rgb(23, 35, 143);
+  color: #FFC705;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  padding-top: 1.2rem;
+  
+}
+
+footer p {
+  padding: .3rem 0;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: .85rem;
 }
