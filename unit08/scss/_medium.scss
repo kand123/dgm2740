@@ -13,8 +13,6 @@ nav ul.hide {
 
 nav ul {
   display: flex;
-  // padding-left: .4rem;
-  // margin-left: 2%;
   
 }
 
@@ -31,24 +29,6 @@ nav ul li {
   
  } 
 
- 
-
-//  nav ul li:first-child a {
-//   border-left: none;
-// }
-
-//   header {
-//       padding-bottom: 1rem;
-//   }
-
-// ul.menu {
-//     padding-left: .4rem;
-//     flex-direction: row;
-// }
-
-// nav ul li a {
-//     padding: .8rem 1.6rem;
-// }
 
 
 
@@ -68,7 +48,6 @@ main {
     font-size: 1.6rem;
     padding-top: 2rem;
     margin-top: 1.6rem;
-    // letter-spacing: .1rem;
   }
 
   header h2 {
@@ -81,8 +60,5 @@ main {
     grid-template-columns: 1fr 1fr;
     column-gap: 10%;
     padding: 4% 8%;
-    // align-items: center;
-    // align-items: flex-start;
-    
-    // padding: 3rem 2vw 5rem 2vw;
+  
   }

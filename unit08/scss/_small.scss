@@ -23,16 +23,10 @@ main, footer
 
 // Header
 
-// #headerwrap {
-//   background-color: #fff;
-//   border-top: 10px solid #777;
-  
-// }
 header {
  display: flex;
  justify-content: space-between;
-//  padding-bottom: 2%;
- background-color: #222;
+ background-color: $headerColor;
  background-image: url(../images/newslogo.png);
  background-repeat: no-repeat;
  background-position: 1% 10%;
@@ -44,27 +38,6 @@ header {
 header h1, header h2 {
   visibility: hidden;
 }
-// header h1 {
-//   font-size: 1.5rem;
-//   letter-spacing: -.08rem;
-//   padding-top: .8rem;
-//   margin-top: 0;
-//   padding-left: 2%;
-//   color: #fff;
-
-//   font-family: 'Fjalla One', sans-serif;
-// }
-
-// header h2 {
-//   padding: 0.5rem 0 0 0;
-//   padding-left: 2%;
-//   color: #fff;
-//   font-size: 1rem;
-//   font-size: .8rem;
-//   letter-spacing: 0.215rem;
-//   letter-spacing: .1rem;
-//   font-family: 'PT Sans', sans-serif;
-// }
 
 
 // Nav
@@ -79,7 +52,7 @@ nav button {
 
 
 nav {
-  background-color: rgb(23, 35, 143);
+  background-color: $blueColor;
   margin-bottom: 2%;
   
 }
@@ -98,45 +71,17 @@ nav ul li a {
   border-top: 1px solid rgba(0,0,0,0.5)
 }
 nav ul li.active a {
-  background-color: #FFC705;
+  background-color: $accentColor;
   color:#000;
 }
 
 nav ul li a:hover {
-  background-color: lighten(#FFC705, 15%);
+  background-color: lighten($accentColor, 15%);
   color: #000;
 }
 
 nav ul.hide {display:none}
 
-// ul.menu {
-//   display: flex;
-//   flex-direction: column;
-// }
-// nav ul li:first-child a {
-//   border-left: none;
-// }
-
-// nav ul li a {
-//   border-left: 1px solid rgb(95, 94, 94);
-//   display: block;
-//   background-color: darkgray;
-//   color: #000;
-//   text-decoration: none;
-//   padding: 0.8rem 1rem;
-// }
-
-// ul.menu li {
-//   width: 100%;
-//   font-size: 1.4rem;
-// }
-
-
-
-// nav ul li a:hover {
-//   background-color: darken(#fff, 10%);
-//   color: white;
-// }
 
 
 // Main
@@ -146,23 +91,9 @@ main {
   grid-template-rows: auto;
   figure:nth-child(1){
     grid-column: 1/span 2;
-    // grid-row: 1/span 2;
     justify-content:center;
   }
 }
-
-// main {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   grid-template-rows: auto;
-//   figure:nth-child(1){
-//     grid-column: 1/span 3;
-//     grid-row: 1/span 2;
-//     justify-content:center;
-    
-//   }
-// }
-
 
 
 
@@ -171,29 +102,10 @@ figure {
   padding: .7rem 1vw;
 }
 
-
-
 figure img {
   width: 100%;
 }
 
-// main h1 {
-//   font-size: 2rem;
-//   padding-top: 2.6rem;
-//   padding-bottom: 1rem;
-
-// }
-
-// div.flexed {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 4% 0;
-// }
-// .column {padding: .5rem $gutter;}
-// @for $i from 1 through 12 {
-//   $w:($i/12) * 100%;
-//   .small-#{$i}{flex-basis: $w;}
-// }
 figcaption {
   padding: .5rem 0;
 }
@@ -202,20 +114,18 @@ figcaption {
 // Footer
 
 #footerwrap {
-  background-color: #222;
+  background-color: $headerColor;
   margin-top: 3%;
 }
 
 #footerLinks {
   display: grid;
-  // justify-content: center;
   grid-template-columns: 100%;
   column-gap: 2%;
   padding: 4% 6%;
-  // align-items: center;
   align-items: flex-start;
   
-  // padding: 3rem 2vw 5rem 2vw;
+ 
 }
 
 
@@ -224,22 +134,17 @@ footer {
   color: white;
 }
 
-// .col1, .col2, .col3, .col4 {
-  
-// }
+
 
 footer a {
-  // padding: 1%;
-  // margin: .0001rem;
+  
   text-decoration: none;
   color: #fff;
   font-size: .95rem;
 }
 
 footer a:hover {
-  color: red;
-  color: rgb(23, 35, 143);
-  color: #FFC705;
+  color: $accentColor;
 }
 
 footer h3 {
