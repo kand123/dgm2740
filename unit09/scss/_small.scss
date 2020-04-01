@@ -1,0 +1,165 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  
+  font-family: 'Roboto Condensed', ;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  
+  box-sizing: border-box;
+}
+
+
+
+main, footer
+{
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+// Header
+
+header {
+ display: flex;
+ justify-content: space-between;
+ background-color: $headerColor;
+ background-image: url(../images/newslogo.png);
+ background-repeat: no-repeat;
+ background-position: 1% 10%;
+ background-size: 80px;
+ padding-bottom: 12%;
+}
+
+
+header h1, header h2 {
+  visibility: hidden;
+}
+
+
+// Nav
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #eee;
+}
+
+
+nav {
+  background-color: $blueColor;
+  margin-bottom: 2%;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: #fff;
+  border-top: 1px solid rgba(0,0,0,0.5)
+}
+nav ul li.active a {
+  background-color: $accentColor;
+  color:#000;
+}
+
+nav ul li a:hover {
+  background-color: lighten($accentColor, 15%);
+  color: #000;
+}
+
+nav ul.hide {display:none}
+
+
+
+// Main
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  figure:nth-child(1){
+    grid-column: 1/span 2;
+    justify-content:center;
+  }
+}
+
+
+
+figure {
+  text-align: center;
+  padding: .7rem 1vw;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  padding: .5rem 0;
+}
+
+
+// Footer
+
+#footerwrap {
+  background-color: $headerColor;
+  margin-top: 3%;
+}
+
+#footerLinks {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2%;
+  padding: 4% 6%;
+  align-items: flex-start;
+  
+ 
+}
+
+
+
+footer {
+  color: white;
+}
+
+
+
+footer a {
+  
+  text-decoration: none;
+  color: #fff;
+  font-size: .95rem;
+}
+
+footer a:hover {
+  color: $accentColor;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  padding-top: 1.2rem;
+  
+}
+
+footer p {
+  padding: .3rem 0;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: .85rem;
+}

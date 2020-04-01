@@ -1,0 +1,293 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  font-family: "Roboto Condensed";
+  font-family: 'Oswald', sans-serif; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  box-sizing: border-box; }
+
+main, footer {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  background-image: url(../images/newslogo.png);
+  background-repeat: no-repeat;
+  background-position: 1% 10%;
+  background-size: 80px;
+  padding-bottom: 12%; }
+
+header h1, header h2 {
+  visibility: hidden; }
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #eee; }
+
+nav {
+  background-color: #17238f;
+  margin-bottom: 2%; }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.5); }
+
+nav ul li.active a {
+  background-color: #FFC705;
+  color: #000; }
+
+nav ul li a:hover {
+  background-color: #ffd852;
+  color: #000; }
+
+nav ul.hide {
+  display: none; }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; }
+  main figure:nth-child(1) {
+    grid-column: 1/span 2;
+    justify-content: center; }
+
+figure {
+  text-align: center;
+  padding: .7rem 1vw; }
+
+figure img {
+  width: 100%; }
+
+figcaption {
+  padding: .5rem 0; }
+
+#footerwrap {
+  background-color: #222;
+  margin-top: 3%; }
+
+#footerLinks {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2%;
+  padding: 4% 6%;
+  align-items: flex-start; }
+
+footer {
+  color: white; }
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .95rem; }
+
+footer a:hover {
+  color: #FFC705; }
+
+footer h3 {
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  padding-top: 1.2rem; }
+
+footer p {
+  padding: .3rem 0; }
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: .85rem; }
+
+@media only screen and (min-width: 560px) {
+  header {
+    background-size: 110px;
+    padding-bottom: 6%;
+    background-position: 1% .5rem; }
+
+  nav button {
+    display: none; }
+
+  nav ul.hide {
+    display: flex; }
+
+  nav ul {
+    display: flex; }
+
+  nav ul li {
+    width: auto;
+    text-align: center;
+    font-size: 1.22rem; }
+
+  nav ul li a {
+    padding: .8rem 1.4rem;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; }
+    main figure:nth-child(1) {
+      grid-column: 1/span 3;
+      justify-content: center; }
+
+  header h1 {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    margin-top: 1.6rem; }
+
+  header h2 {
+    font-size: 1rem;
+    letter-spacing: 0rem; }
+
+  #footerLinks {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    padding: 4% 8%; } }
+@media only screen and (min-width: 960px) {
+  header {
+    padding-bottom: 0; }
+
+  main {
+    padding-left: 1%;
+    padding-right: 1%; }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; }
+    main figure:nth-child(1) {
+      grid-column: 1/span 3;
+      grid-row: 1/span 2;
+      justify-content: center; }
+
+  header h1 {
+    padding-left: .6rem; }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-top: 2.6rem;
+    padding-top: 3rem; }
+
+  header h2 {
+    padding-left: .6rem; }
+
+  header h2 {
+    font-size: 1rem;
+    letter-spacing: 0.215rem; }
+
+  header h1 {
+    padding-top: 3rem; }
+
+  #footerLinks {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2%;
+    padding: 2% 2% 4% 2%; }
+
+  footer h3 {
+    font-size: 1.2rem;
+    padding-bottom: .5rem; } }
+
+/*# sourceMappingURL=styles.css.map */
