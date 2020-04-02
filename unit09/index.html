@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- STYLESHEET -->
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet" />
     
     <title>Boston City</title>
@@ -11,101 +13,133 @@
 <body>
     
     <header>
-        <div>
-          <h1>News</h1>
-        <h2>Slogan</h2>
-      </div>
+        <div></div>
+          <h1>Boston City</h1>
+        <h2>Where History Comes Alive</h2>
+      
       </header>
     
   
       <nav>
           <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Opinion</a></li>
-          <li class="active"><a href="#">Politics</a></li>
-          <li><a href="#">Business</a></li>
+          <li class="active"><a href="#">Visit</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pay Bills</a></li>
+          <li><a href="#">Meetings</a></li>
+          <li><a href="#">Help</a></li>
         </ul>
       </nav>
   
       <main>
-    <figure>
-      <img src="images/story1.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. </figcaption>
-    </figure>
-    <figure>
-      <img src="images/story2.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/story3.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/story8.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/story9.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/story6.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/story7.jpg" alt="" />
-      <figcaption>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</figcaption>
-    </figure>
-       
-  
-  
-      </main>
+<div class="headSlider">
+    <picture>
+        <source srcset="images/bostonslider3.jpg" media="(max-width: 560px)">     
+        <source srcset="images/bostonslider3-wide.jpg" media="(min-width: 561px)"> 
+        <img src="images/slider3-wide.jpg" alt="">
+        <div><b>Title</b> - Lorem ipsum and shee e </div>
+        </picture> 
+<!-- <picture>
+<source srcset="images/bostonslider1.jpg" media="(max-width: 560px)">     
+<source srcset="images/bostonslider1-wide.jpg" media="(min-width: 561px)"> 
+<img src="images/slider1-wide.jpg" alt="">
+<div><b>Title</b> - Lorem ipsum and shee e </div>
+</picture>    -->
+<picture>
+    <source srcset="images/bostonslider5.jpg" media="(max-width: 560px)">     
+    <source srcset="images/bostonslider5-wide.jpg" media="(min-width: 561px)"> 
+    <img src="images/bostonslider5-wide.jpg" alt="">
+    <div><b>Title</b> - Lorem ipsum and shee e </div>
+    </picture>  
+<picture>
+    <source srcset="images/bostonslider2.jpg" media="(max-width: 560px)">     
+    <source srcset="images/bostonslider2-wide.jpg" media="(min-width: 561px)"> 
+    <img src="images/bostonslider2-wide.jpg" alt="">
+    <div><b>Title</b> - Lorem ipsum and shee e </div>
+    </picture> 
+    
+        <picture>
+            <source srcset="images/bostonslider12.jpg" media="(max-width: 560px)">     
+            <source srcset="images/bostonslider12-wide.jpg" media="(min-width: 561px)"> 
+            <img src="images/bostonslider12-wide.jpg" alt="">
+            <div><b>Title</b> - Lorem ipsum and shee e </div>
+            </picture>   
+                <!-- <picture>
+                    <source media="(max-width: 560px)" srcset="images/bostonslider7.jpg" >     
+                    <source media="(min-width: 561px)" srcset="images/bostonslider7-wide.jpg" > 
+                    <img src="images/bostonslider7-wide.jpg" alt="">
+                    <div><b>Title</b> - Lorem ipsum and shee e </div>
+                    </picture>   -->
+
+                
+
+</div>    
+
+<h1>Plan Your Visit</h1>
+<div class="cards">
+<div>
+    <a href="#">
+        <img src="#" alt="">
+        <h3>WHERE TO STAY</h3>
+        <span class="fas fa-bed"></span>
+
+    </a>
+</div>
+<div>
+    <a href="#">
+        <img src="#" alt="">
+        <h3>LANDMARKS</h3>
+        <span class="fas fa-landmark"></span>
+
+    </a>
+</div>
+<div>
+    <a href="#">
+        <img src="#" alt="">
+        <h3>EVENTS</h3>
+       <span class="fas fa-calendar-alt"></span>
+
+    </a>
+</div>
+<div>
+    <a href="#">
+        <img src="#" alt="">
+        <h3>FINE DINING</h3>
+        <span class="fas fa-utensils"></span>
+
+    </a>
+</div>
+</div>
+
+</main>
   
   
   
   <div id="footerwrap">
       <footer>
   
-  <div id="footerLinks">
-        
-    <div class="col1">
-          <h3>SECTIONS</h3>
-          <a href="#"><p>Home</p></a>
-          <a href="#"><p>Video</p></a>
-          <a href="#"><p>Opinion</p></a>
-          <a href="#"><p>Entertainment</p></a>
-          <a href="#"><p>Health</p></a>
-  </div>
-  <div class="col2">
-    <h3>SHOWS</h3>
-    <a href="#"><p>Happenings</p></a>
-    <a href="#"><p>Sunday AM</p></a>
-    <a href="#"><p>Newsroom</p></a>
-    <a href="#"><p>World</p></a>
-  </div>
-  <div class="col3">
-    <h3>TOOLS</h3>
-    <a href="#"><p>Jobs</p></a>
-    <a href="#"><p>Privacy Policy</p></a>
-    <a href="#"><p>Contact Us</p></a>
-    <a href="#"><p>Media Relations</p></a>
-  </div>
-  <div class="col4">
-    <h3>PERSONALITIES</h3>
-    <a href="#"><p>Jim Johnson</p></a>
-    <a href="#"><p>Al Avery</p></a>
-    <a href="#"><p>Bill Banton</p></a>
-    <a href="#"><p>Charlie Christensen</p></a>
-    <a href="#"><p>Dave Dingleman</p></a>
-  </div><!--closes col4-->
-  </div><!--closes footerLinks-->
-  
-  <p class="copyright">&copy; 2020 Kristin Andrews for DGM 2740</p>
+  <p class="copyright">&copy; 2020 Kristin Andrews &bull; Login</p>
          
   
       </footer>
     </div> <!--closes footerwrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.headSlider').slick({
+                dots: true,
+                arrows: false, 
+                infinite: true, 
+                speed: 1000,
+                // cssEase: 'ease-out', 
+                autoplay: true, 
+                autoplaySpeed: 4000
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/0e57c09841.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     </body>
   </html>

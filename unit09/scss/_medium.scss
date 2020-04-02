@@ -1,15 +1,22 @@
 
-header {
-  background-size: 110px;
-  padding-bottom: 6%;
-  background-position: 1% .5rem;
-}
+// header {
+//   background-size: 110px;
+//   padding-bottom: 6%;
+//   background-position: 1% .5rem;
+// }
 nav button {display: none;}
 
 nav ul.hide {
   display: flex;
 };
 
+nav {
+  background: linear-gradient(rgba(177, 7, 44, 0.65), rgba(177, 7, 44, 0.95));
+}
+
+// nav ul li :last-child {
+//   border-right: none;
+// };
 
 nav ul {
   display: flex;
@@ -23,42 +30,51 @@ nav ul li {
   }
 
  nav ul li a {
-  padding: .8rem 1.4rem;
+  padding: .6rem 1.2rem;
   border: none;
   border-right: 1px solid rgba(0,0,0,0.3);
   
  } 
+//  nav ul li a :nth-child() {border-right: none;}
 
 
 
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  figure:nth-child(1){
-    grid-column: 1/span 3;
-    // grid-row: 1/span 1;
-    justify-content:center;
+// main {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-template-rows: auto;
+//   figure:nth-child(1){
+//     grid-column: 1/span 3;
+//     // grid-row: 1/span 1;
+//     justify-content:center;
     
-  }
-}
+//   }
+// }
 
   header h1 {
-    font-size: 1.6rem;
-    padding-top: 2rem;
+    font-size: 1.8rem;
+    padding-top: 4rem;
     margin-top: 1.6rem;
   }
 
   header h2 {
     font-size: 1rem;
-    letter-spacing: 0rem;
+    // letter-spacing: 0rem;
   }
   
-  #footerLinks {
+  // #footerLinks {
+  //   // display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   column-gap: 10%;
+  //   padding: 4% 8%;
+  
+  // }
+
+  div.cards {
     // display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-    padding: 4% 8%;
-  
+    // text-align: center;
+    // padding: 2% 1%;
+    // column-gap: 1%;
+    margin-bottom: 3%;
   }
