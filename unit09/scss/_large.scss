@@ -3,24 +3,6 @@ header {
 }
 
 
-// main {
-//     padding-left: 1%;
-//     padding-right: 1%;
-    
-// }
-
-// main {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   grid-template-rows: auto;
-//   figure:nth-child(1){
-//     grid-column: 1/span 3;
-//     grid-row: 1/span 2;
-//     justify-content:center;
-//   }
-// }
-
-
 header h1 {
     padding-left: .5rem;
 
@@ -28,9 +10,6 @@ header h1 {
 
 header h1 {
     font-size: 3.2rem;
-    // padding-top: 12rem;
-    // margin-top: 2.6rem;
-    // padding-top: 3rem;
   }
 
 header h2 {
@@ -39,37 +18,10 @@ header h2 {
 }
 
 header h2 {
-    font-size: 1.1rem;
-    // letter-spacing: .412rem;
-    // letter-spacing: 0.215rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.04rem;
   }
 
-// header h1 {
-//     padding-top: 3rem;
-// }
-
-
-
-  // #footerLinks {
-  //   // display: grid;
-  //   // justify-content: center;
-  //   grid-template-columns: 1fr 1fr 1fr 1fr;
-  //   column-gap: 2%;
-  //   padding: 2% 2% 4% 2%;
-  // }
-
-  // footer h3 {
-  //   font-size: 1.2rem;
-  //   padding-bottom: .5rem;
-  
-  // }
-
-
   div.cards {
-    // display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-    // text-align: center;
-    // padding: 2% 1%;
-    // column-gap: 1%;
   }

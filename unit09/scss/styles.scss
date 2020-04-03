@@ -7,11 +7,11 @@
 @import "../slick/slick-theme";
 @import "../slick/slick";
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 500px) {
 @import "medium";
 } 
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 920px) {
 @import "large";
 	
 } 

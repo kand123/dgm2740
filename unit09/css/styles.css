@@ -88,16 +88,15 @@ input, select {
   vertical-align: middle; }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-  font-family: "Roboto Condensed";
-  font-family: 'Oswald', sans-serif; }
-
 /*  apply a natural box layout model to all elements  */
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box; }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
   max-width: 64rem;
   margin-left: auto;
   margin-right: auto; }
@@ -106,23 +105,29 @@ header {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url(../images/bostonheader.jpg);
   background-position: 1% 65%;
   background-size: 100%;
-  padding-bottom: .5%; }
+  padding-bottom: 0.5%; }
 
-header h1, header h2 {
+header h1,
+header h2 {
   color: black; }
 
 header h1 {
   padding: 0;
-  padding-bottom: .25rem;
-  font-family: 'Oswald', sans-serif; }
+  padding-bottom: 0.25rem;
+  font-family: "Oswald", sans-serif;
+  padding-top: 5%;
+  font-size: 1.9rem;
+  letter-spacing: 0.15rem;
+  padding-left: 1%; }
 
 header h2 {
-  letter-spacing: .07rem;
-  padding-bottom: .5%;
-  font-family: 'Source Sans Pro', sans-serif; }
+  letter-spacing: 0rem;
+  padding-bottom: 0.5%;
+  font-size: 0.9rem;
+  padding-left: 1%; }
 
 nav button {
-  margin: .2rem 2%;
+  margin: 0.2rem 2%;
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
@@ -138,11 +143,11 @@ nav ul {
 
 nav ul li a {
   display: block;
-  font-size: 1rem;
-  padding: .55rem 2%;
+  font-size: 0.9rem;
+  padding: 0.75rem 2%;
   text-decoration: none;
   color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.5); }
+  border-top: 1px solid rgba(197, 196, 196, 0.5); }
 
 nav ul li.active a {
   background-color: rgba(128, 5, 32, 0.9);
@@ -161,7 +166,7 @@ main {
 
 main h1 {
   font-size: 1.9rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   padding-left: 1%; }
 
 .headSlider div {
@@ -174,6 +179,9 @@ picture {
   position: relative; }
   picture img {
     width: 100%; }
+  picture p {
+    padding: .5rem;
+    font-size: .9rem; }
 
 picture div {
   position: absolute;
@@ -181,23 +189,13 @@ picture div {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3); }
 
-footer {
-  color: white;
-  background-color: #5c594d;
-  display: flex;
-  justify-content: center; }
-
-footer p {
-  padding: 1rem 0;
-  font-size: .9rem; }
-
 div a {
   display: block;
   width: 100%;
   height: 300px;
   text-decoration: none;
   padding: 0 2%;
-  transition: all .5s ease-in; }
+  transition: all 0.5s ease-in; }
 
 div.cards {
   display: grid;
@@ -206,14 +204,14 @@ div.cards {
   padding: 1% 1%;
   column-gap: 1%;
   row-gap: 1%;
-  margin-bottom: 8%; }
+  margin-bottom: 10%; }
 
 div.cards a {
   color: white;
   padding-top: 2rem;
   font-size: 1.05rem; }
   div.cards a span {
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     font-size: 2rem; }
 
 div.cards div:nth-child(1) {
@@ -254,6 +252,16 @@ div.cards :nth-child(4) a {
 div.cards a:hover {
   background: none;
   text-shadow: 0 0 4px black; }
+
+footer {
+  color: white;
+  background-color: #5c594d;
+  display: flex;
+  justify-content: center; }
+
+footer p {
+  padding: 1rem 0;
+  font-size: 0.9rem; }
 
 /* Slider */
 .slick-loading .slick-list {
@@ -459,7 +467,17 @@ div.cards a:hover {
 .slick-arrow.slick-hidden {
   display: none; }
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 500px) {
+  header h1 {
+    font-size: 2.6rem;
+    padding-top: 4rem;
+    padding-left: 1%; }
+
+  header h2 {
+    font-size: 1.11rem;
+    padding-left: 1%;
+    letter-spacing: .02rem; }
+
   nav button {
     display: none; }
 
@@ -467,7 +485,7 @@ div.cards a:hover {
     display: flex; }
 
   nav {
-    background: linear-gradient(rgba(177, 7, 44, 0.65), rgba(177, 7, 44, 0.95)); }
+    background: linear-gradient(rgba(177, 7, 44, 0.7), rgba(177, 7, 44, 0.95)); }
 
   nav ul {
     display: flex; }
@@ -475,25 +493,17 @@ div.cards a:hover {
   nav ul li {
     width: auto;
     text-align: center;
-    font-size: 1.22rem; }
+    font-size: .9rem; }
 
   nav ul li a {
-    padding: .6rem 1.2rem;
+    padding: .6rem 1rem;
     border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-
-  header h1 {
-    font-size: 1.8rem;
-    padding-top: 4rem;
-    margin-top: 1.6rem; }
-
-  header h2 {
-    font-size: 1rem; }
+    border-right: 1px solid rgba(197, 197, 196, 0.3); }
 
   div.cards {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 3%; } }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 920px) {
   header {
     padding-bottom: 0; }
 
@@ -507,7 +517,8 @@ div.cards a:hover {
     padding-left: .6rem; }
 
   header h2 {
-    font-size: 1.1rem; }
+    font-size: 1.3rem;
+    letter-spacing: 0.04rem; }
 
   div.cards {
     grid-template-columns: 1fr 1fr 1fr 1fr; } }
