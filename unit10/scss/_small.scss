@@ -1,155 +1,136 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
-
-/*  apply a natural box layout model to all elements  */
+/*----------- apply a natural box layout model to all elements --------------*/
 * {
-  font-family: $mainFont;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-header,
-nav,
-main,
-footer {
-  max-width: 64rem;
-  margin-left: auto;
-  margin-right: auto;
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
 }
 
-// Header
-
+/*----------- HEADER --------------*/
 header {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url(../images/bostonheader.jpg);
-  background-position: 1% 65%;
-  background-size: 100%;
-  padding-bottom: 0.5%;
-}
-
-// header h1,
-// header h2 {
-//   color: black;
-// }
-header h1 {
-  padding: 0;
-  padding-bottom: 0.25rem;
-  font-family: "Oswald", sans-serif;
-  padding-top: 5%;
-  font-size: 1.9rem;
-  letter-spacing: 0.15rem;
-  padding-left: 1%;
-}
-// header h2 {
-//   letter-spacing: 0rem;
-//   padding-bottom: 0.5%;
-  
-//   font-size: 0.9rem;
-//   padding-left: 1%;
-// }
-
-// Nav
-
-nav button {
-  margin: 0.2rem 2%;
-  background-color: transparent;
-  border: none;
-  font-size: 1.6rem;
-  color: #eee;
-}
-
-nav {
-  background-color: $phoneprimaryColor;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
-  font-size: 0.9rem;
-  padding: 0.75rem 2%;
-  text-decoration: none;
-  color: #fff;
-  border-top: 1px solid rgba(197, 196, 196, 0.5);
-}
-nav ul li.active a {
-  background-color: darken($phoneprimaryColor,10%);
-  color: #fff;
-}
-
-nav ul li a:hover {
-  background-color: lighten($phoneprimaryColor,15%);
-  color: #fff;
-}
-
-#hamburgerBtn span:nth-child(1) {display:block;}
-#hamburgerBtn span:nth-child(2) {display:none;}
-
-#hamburgerBtn.open span:nth-child(1) {display:none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;}
-
-#primaryNav{
-  height: 0;
-  overflow: hidden;
-}
-
-#primaryNav.open {
-  height: auto;
-}
-
-#primaryNav li.parent > a::after{
-  content: '\25BC';
-  font-size: .75rem;
-  color: rgba(255,255,255,.5);
-  float:right;
-}
-
-#primaryNav li ul {
-  display: none;
-}
-
-#primaryNav li:hover ul {
-  display: block;
-}
-
-// nav ul.hide {
-//   display: none;
-// }
-
-// Main
-
-main {
-  margin: 0 auto;
-  padding: 0;
-}
-
-main h1 {
-  font-size: 1.9rem;
-  margin-bottom: 0.8rem;
-  padding-left: 1%;
-}
-
-
-
-
-
-// Footer
-
-footer {
-  color: white;
-  background-color: rgb(92, 89, 77);
+  padding: 0.1rem 0;
+  background-color: rgb(230, 223, 184);
+  background-color: $primaryColor;
+  color: $accentRed;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    width: 90px;
+    padding: 0;
+  }
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: "Pacifico", cursive;
+  padding-left: 0;
+  margin-left: 0;
+}
+header h2 {
+  margin: 0;
+  font-weight: normal;
 }
 
-footer p {
-  padding: 1rem 0;
-  font-size: 0.9rem;
+/*----------- NAVIGATION --------------*/
+nav {
+  background-color: black;
 }
 
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 10rem;
+  padding-top: 2.2rem;
+}
+
+// Form styling
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid $primaryColor;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: black;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label input {
+  border-radius: 6px;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: black;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font: 1rem;
+  border: solid 1px gray;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: #eee;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: $accentRed;
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 2px;
+  margin: 0 0 2rem 2%;
+  width: 94%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: black solid 6px;
+}
+/*----------- FOOTER --------------*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 1.1rem 2%;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

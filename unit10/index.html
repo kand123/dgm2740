@@ -1,67 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- STYLESHEET -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
 
-    <title>Swag Shop</title>
-  </head>
-  <body>
-    <header>
-      <div></div>
-      <h1>Swag Shop</h1>
-      
+<title>Order: Swag Shop</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+     
+</head>
+<body>
+
+	<header>
+        <img src="images/swagshop9.png" alt="">
+ <h1>Swag Shop</h1>
+        
     </header>
 
-    <nav>
-      <button id=hamburgerBtn>
-       <span><i>&equiv;</i>OPEN</span> 
-       <span><i>&otimes;</i>CLOSE</span> 
-    </button>
+    
 
-      <ul id="primaryNav hide">
+<nav class="clearfix">
+    <button id="hamburgerBtn"><span><i>&#9776;</i>OPEN</span> <span><i>&otimes;</i>CLOSE</span></button>
+    <ul id="primaryNav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Deals</a></li>
-        <li class="active parent"><a href="#">Order</a>
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-        </ul>
+        <li class="parent current-menu-item active"><a href="index.html">Order</a>
+            <ul>
+                <li><a href="#">Water Bottles</a></li>
+                <li><a href="#">Hats</a></li>
+                <li><a href="#">Shirts</a></li>
+            </ul>
         </li>
-        <li><a href="#">Customer Reviews</a></li>
-      </ul>
-    </nav>
+        <li><a href="#">Customer Reviews</a></li> 
+
+    </ul>
+</nav>
+    
 
     <main>
-     <h1>Order</h1>
+        <h1>Order</h1>
+      <form method="get" action="thanks.html">
+<fieldset>
+    <legend>Customer Information</legend>
+    <label class="top">Full Name* <input type="text" name="name" required></label>
+ 
+    <label class="top">Phone*<input type="tel" name="phone" required placeholder="12345551234"></label>
+    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required> </label>
+ 
+</fieldset>
 
+<fieldset>
+    <legend>Swag Information</legend>
+    <label class="top">Date Needed <input type="date" name="dateneeded"></label>
+    <label class="top">Business Name <input type="text" name="busname"></label>
+    <label class="top">Business URL<input type="URL" name="busurl"></label>
+    <label class="top">Color <select name="color">
+        <option value="">Please Select &#9662;</option>
+        <option value="green">Black</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="green">Purple</option>
+        <option value="green">Red</option>
+        <option value="green">White</option>
+        <option value="green">Yellow</option>
+    </select></label>
+    <label class="top">Quantity <input type="number" name="quantity"></label>
+    <div>Material</div>
+    <label class="sbs"><input type="radio" name="material" value="aluminum"> Aluminum</label>
+    <label class="sbs"><input type="radio" name="material" value="plastic"> Plastic</label>
+    <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
 
+</fieldset>
+
+<fieldset>
+
+    <legend>Payment Information</legend>
+ <label class="top">Name on Card* <input type="text" name="cardname" required></label>
+ <label class="top">Card Number* <input type="number" name="cardnum" required></label>
+ <label class="top">Expiration Date* <input type="date" name="exdate" required></label>
+<!-- <label class="top">How Many Authors <input type="number" name="authors"></label> -->
+</fieldset>
+<input type="submit" value="Order My Swag" class="submitBtn"> 
+
+</form>
     </main>
-
-    <div id="footerwrap">
-      <footer>
-        <p class="copyright">&copy; 2020 Kristin Andrews &bull; Login</p>
-      </footer>
-    </div>
-    <!--closes footerwrap-->
     
-   
-    <script>
-      function toggleMenu() {
-        document.getElementById("primaryNav").classList.toggle("hide");
-      }
-    </script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+  
+    <footer>
+        &copy; 2020 &bull; Kristin Andrews for DGM 2740
+    </footer>
+    <script type="text/javascript" src="js/toggleMenu.js"></script>
+</body>
 </html>
