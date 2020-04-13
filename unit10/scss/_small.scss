@@ -88,9 +88,39 @@ nav ul li a:hover {
   color: #fff;
 }
 
-nav ul.hide {
+#hamburgerBtn span:nth-child(1) {display:block;}
+#hamburgerBtn span:nth-child(2) {display:none;}
+
+#hamburgerBtn.open span:nth-child(1) {display:none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+#primaryNav{
+  height: 0;
+  overflow: hidden;
+}
+
+#primaryNav.open {
+  height: auto;
+}
+
+#primaryNav li.parent > a::after{
+  content: '\25BC';
+  font-size: .75rem;
+  color: rgba(255,255,255,.5);
+  float:right;
+}
+
+#primaryNav li ul {
   display: none;
 }
+
+#primaryNav li:hover ul {
+  display: block;
+}
+
+// nav ul.hide {
+//   display: none;
+// }
 
 // Main
 
