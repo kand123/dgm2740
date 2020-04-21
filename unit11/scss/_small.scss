@@ -18,7 +18,9 @@
  
 }
 
-
+body {font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 
 // Header
@@ -35,6 +37,9 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 
 
   width: 100vw;
   padding-left: 2%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  border: 1px solid lightgray;
   // background-image: linear-gradient(
   //     rgba(255, 255, 255, 0.7),
   //     rgba(255, 255, 255, 0.8)
@@ -43,13 +48,18 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 
   // background-position: 1% 65%;
   // background-size: 100%;
   // padding-bottom: 0.5%;
-  img {width: 300px;}
+  img {width: 250px;}
 }
 
 header h1,
 header h2 {
   color: black;
 }
+
+// header {
+//   border-bottom: 3px solid rgb(44, 44, 247);
+// }
+
 // header h1 {
 //   padding: 0;
 //   padding-bottom: 0.25rem;
@@ -87,7 +97,7 @@ nav {
   width: 100%;
   padding-top: 1.5rem;
   height: 100vh;
-  background-color: rgb(44, 44, 247);
+  background-color:$primaryColor;
   
  
 }
@@ -106,28 +116,23 @@ nav {
 nav ul li a {
   display: block;
   font-size: 1.1rem;
-  padding: 0.75rem 2%;
+  padding: 1rem 1%;
   text-decoration: none;
   color: #fff;
   // border-top: 1px solid rgba(197, 196, 196, 0.5);
   text-align: center;
 }
 
-.ex {
-  // text-align: start;
-  padding: 2rem;
-  color: white;
-  text-decoration: none;
-}
-// nav ul li.active a {
-//   // background-color: darken($phoneprimaryColor,10%);
-//   color: #fff;
-// }
 
-// nav ul li a:hover {
-//   // background-color: lighten($phoneprimaryColor,15%);
-//   color: #fff;
-// }
+nav ul li.active a {
+  background-color: darken($primaryColor,20%);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: lighten($primaryColor,8%);
+  color: #fff;
+}
 
 
 
@@ -138,10 +143,19 @@ main {
   // padding: 0;
   grid-area: content;
 background-color: white;
+padding: 2%;
+padding-top: 5%;
+margin-bottom: 12%;
+h1 {font-size: 1.75rem; padding-top: .5rem; padding-bottom: 0}
+h3 {font-size: 1.3rem; padding-top: 2.5rem; padding-bottom: .5rem; }
+p {line-height: 1.5rem; font-size: 1.1rem;}
 }
 
-main {
-  padding: 2%;
+.picdiv, .picdiv2 {
+  display: flex;
+  flex-wrap: wrap;
+// grid-template-columns: 1fr;
+img {width: 100%; padding-top: 1.3rem; padding-bottom: 1rem; }
 }
 
 
@@ -154,8 +168,9 @@ main {
 
 div#hamburger {
   grid-area: hamburger;
-  background-color: blue;
-  padding: 1.5rem;
+  // background-color: blue;
+  background-color: rgb(44, 44, 247);
+  padding: 1.1rem;
  a { color: white;
 text-decoration: none;
 }
@@ -169,7 +184,16 @@ a.myjump {
   padding: .4rem;
 }
 
-
+.ex {
+  // text-align: start;
+  // padding: 2%;
+  // padding-top: 1%;
+  margin-left: 6%;
+  color: white;
+  text-decoration: none;
+  margin-top: -.5rem;
+ 
+}
 
 
 

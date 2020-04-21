@@ -11,6 +11,7 @@
 
 header {
   padding-left: 2%;
+  padding-bottom: 1%;
 }
 
 // header h1 {
@@ -59,7 +60,42 @@ nav ul li {
 //  } 
 
 
-  
-  
+h3{font-size: 1.5rem;}
 
+.picdiv {
+  
+display: grid;
+  grid-template-columns: auto 220px;
+  
+  p{padding-right: 3%; font-size: 1.2rem; font-size: 1.1rem; line-height: 1.6rem;}
+// grid-template-columns: 1fr 1fr;
+img {
+  padding-top: 4.5rem;
+  // align-self: center;
+}
+}
+.picdiv2 {
+  
+  display: grid;
+  grid-template-areas: 
+  "imagefloat textfloat";
+    grid-template-columns: 220px auto;
+  // grid-template-columns: 1fr 1fr;
+  p{padding-left: 3%; font-size: 1.2rem; font-size: 1.1rem; line-height: 1.6rem;}
+  h3 {padding-left: 3%;}
+  img {
+    padding-top: 4.5rem;
+    // align-self: center;
+  }
+  }
+
+.secondText {
+  grid-area: textfloat;
+}
+  
+.floatleft {
+  grid-area: imagefloat;
+}  
+
+main h1 {padding-top: 0;}
   
