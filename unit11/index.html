@@ -9,16 +9,22 @@
 
     <title>TechWatch</title>
   </head>
+
+  
   <body>
+    <div id="pageWrapper">
+      <!-- <div id="headerWrap"> -->
     <header>
-      <div></div>
+      <!-- <div></div> -->
       <h1>TechWatch</h1>
       <h2>Tagline of some kind</h2>
     </header>
+  
+ 
 
-    <nav>
-      <button onclick="toggleMenu()">&#9776;</button>
-      <ul id="primaryNav" class="hide">
+    <nav id="links"> 
+  <a class="myjump ex" href ="#hamburger">X</a>
+      <ul>
         <li><a href="#">Phones</a></li>
         <li class="active"><a href="#">Tablets</a></li>
         <li><a href="#">Laptops</a></li>
@@ -31,16 +37,21 @@
 
     <main>
      <h1>Tablets New to the Market</h1>
-       
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
      
     </main>
 
-    <div id="footerwrap">
+    
       <footer>
         <p class="copyright">&copy; 2020 Kristin Andrews &bull; Login</p>
       </footer>
-    </div>
-    <!--closes footerwrap-->
+   
+
+      <div id="hamburger">
+        <a class="myjump" href="#links">&#9776;</a>
+      </div>
+    
+   
 
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
@@ -50,10 +61,12 @@
       src="https://kit.fontawesome.com/0e57c09841.js"
       crossorigin="anonymous"
     ></script> -->
-    <script>
-      function toggleMenu() {
-        document.getElementById("primaryNav").classList.toggle("hide");
-      }
-    </script>
+    <!-- <script>
+      // function toggleMenu() {
+      //   document.getElementById("primaryNav").classList.toggle("hide");
+      // }
+    </script> -->
+    </div> <!--closes pageWrapper-->
   </body>
+
 </html>

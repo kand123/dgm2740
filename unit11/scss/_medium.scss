@@ -1,45 +1,62 @@
 
-header h1 {
-  font-size: 2.6rem;
-  padding-top: 4rem;
-  padding-left: 1%;
+#pageWrapper {
+  
+  grid-template-areas: 
+  "header header"
+  "navigation content"
+  "footer footer";
+  grid-template-columns: 150px auto;
+  grid-template-rows: auto;
 }
 
-header h2 {
-  font-size: 1.11rem;
-  padding-left: 1%;
-  letter-spacing: .02rem;
-}
+// header {
+//   width: 100%;
+// }
 
+// header h1 {
+//   font-size: 2.6rem;
+//   padding-top: 4rem;
+//   padding-left: 1%;
+// }
 
-nav button {display: none;}
+// header h2 {
+//   font-size: 1.11rem;
+//   padding-left: 1%;
+//   letter-spacing: .02rem;
+// }
 
-nav ul.hide {
-  display: flex;
-};
 
 nav {
-  background: linear-gradient(rgba(177, 7, 44, 0.7), rgba(177, 7, 44, 0.95));
+  height: auto;
+  
+  
 }
 
 
+
+a.myjump {display: none;}
+
+#hamburger {display: none;}
+
 nav ul {
-  display: flex;
-  
+  display: block;
+  flex-flow: column;
 }
 
 nav ul li {
     width: auto;
     text-align: center;
+    // flex-basis: 25%;
     font-size: .9rem;
+    color: white;
   }
 
- nav ul li a {
-  padding: .6rem 1rem;
-  border: none;
-  border-right: 1px solid rgba(197,197,196,0.3);
+//  nav ul li a {
+//   padding: .6rem 1rem;
+//   border: none;
+//   border-right: 1px solid rgba(197,197,196,0.3);
   
- } 
+//  } 
 
 
   
