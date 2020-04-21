@@ -16,6 +16,10 @@ width: 100%;
 padding-left: 6%;
 padding-right: 6%;
 }
+
+header {padding-left: 5%;}
+main {padding-left: 6%;}
+
 // .headerwrap {
 //   width: 100%;
 // }
@@ -67,8 +71,8 @@ padding-right: 6%;
 //    } 
 
    nav {
-     padding-top: 0;
-    background: linear-gradient(rgba(177, 7, 44, 0.7), rgba(177, 7, 44, 0.95));
+     padding-top: .1rem;
+    padding-bottom: .1rem;
   }
   
   

@@ -25,9 +25,16 @@
 
 header {
   grid-area: header;
-  background-color: pink;
+  background: url(../images/tiny-squares.png);
+  
+// background-image: url('../images/tiny-squares.png');
+// background-color: rgba(255,255,255,.9);
+
+background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)),
+                  url("../images/tiny-squares.png");
+
   width: 100vw;
-  padding: 2%;
+  padding-left: 2%;
   // background-image: linear-gradient(
   //     rgba(255, 255, 255, 0.7),
   //     rgba(255, 255, 255, 0.8)
@@ -36,6 +43,7 @@ header {
   // background-position: 1% 65%;
   // background-size: 100%;
   // padding-bottom: 0.5%;
+  img {width: 300px;}
 }
 
 header h1,
@@ -79,7 +87,8 @@ nav {
   width: 100%;
   padding-top: 1.5rem;
   height: 100vh;
-  background-color: blue;
+  background-color: rgb(44, 44, 247);
+  
  
 }
 
@@ -96,7 +105,7 @@ nav {
 
 nav ul li a {
   display: block;
-  
+  font-size: 1.1rem;
   padding: 0.75rem 2%;
   text-decoration: none;
   color: #fff;
@@ -170,7 +179,7 @@ a.myjump {
 footer {
   grid-area: footer;
   color: white;
-  background-color: rgb(92, 89, 77);
+  background-color: black;
   display: flex;
   justify-content: center;
 }
