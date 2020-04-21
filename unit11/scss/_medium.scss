@@ -14,25 +14,10 @@ header {
   padding-bottom: 1%;
 }
 
-// header h1 {
-//   font-size: 2.6rem;
-//   padding-top: 4rem;
-//   padding-left: 1%;
-// }
-
-// header h2 {
-//   font-size: 1.11rem;
-//   padding-left: 1%;
-//   letter-spacing: .02rem;
-// }
-
 
 nav {
-  height: auto;
-  
-  
+  height: auto;  
 }
-
 
 
 a.myjump {display: none;}
@@ -52,13 +37,6 @@ nav ul li {
     color: white;
   }
 
-//  nav ul li a {
-//   padding: .6rem 1rem;
-//   border: none;
-//   border-right: 1px solid rgba(197,197,196,0.3);
-  
-//  } 
-
 
 h3{font-size: 1.5rem;}
 
@@ -68,10 +46,9 @@ display: grid;
   grid-template-columns: auto 220px;
   
   p{padding-right: 3%; font-size: 1.2rem; font-size: 1.1rem; line-height: 1.6rem;}
-// grid-template-columns: 1fr 1fr;
 img {
   padding-top: 4.5rem;
-  // align-self: center;
+  
 }
 }
 .picdiv2 {
@@ -80,12 +57,11 @@ img {
   grid-template-areas: 
   "imagefloat textfloat";
     grid-template-columns: 220px auto;
-  // grid-template-columns: 1fr 1fr;
+  
   p{padding-left: 3%; font-size: 1.2rem; font-size: 1.1rem; line-height: 1.6rem;}
   h3 {padding-left: 3%;}
   img {
     padding-top: 4.5rem;
-    // align-self: center;
   }
   }
 

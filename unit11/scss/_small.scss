@@ -3,7 +3,6 @@
 
 /*  apply a natural box layout model to all elements  */
 * {
-  // font-family: $mainFont;
   box-sizing: border-box;
 }
 
@@ -15,10 +14,9 @@
   "content"
   "footer"
   "navigation";
- 
 }
 
-body {font-family: 'Roboto', sans-serif;
+body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -28,11 +26,7 @@ body {font-family: 'Roboto', sans-serif;
 header {
   grid-area: header;
   background: url(../images/tiny-squares.png);
-  
-// background-image: url('../images/tiny-squares.png');
-// background-color: rgba(255,255,255,.9);
-
-background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)),
+background-image: linear-gradient(rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0.8)),
                   url("../images/tiny-squares.png");
 
   width: 100vw;
@@ -40,14 +34,6 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 
   padding-top: 3%;
   padding-bottom: 2%;
   border: 1px solid lightgray;
-  // background-image: linear-gradient(
-  //     rgba(255, 255, 255, 0.7),
-  //     rgba(255, 255, 255, 0.8)
-  //   )
-    // url(../images/bostonheader.jpg);
-  // background-position: 1% 65%;
-  // background-size: 100%;
-  // padding-bottom: 0.5%;
   img {width: 250px;}
 }
 
@@ -56,40 +42,6 @@ header h2 {
   color: black;
 }
 
-// header {
-//   border-bottom: 3px solid rgb(44, 44, 247);
-// }
-
-// header h1 {
-//   padding: 0;
-//   padding-bottom: 0.25rem;
-
-//   padding-top: 5%;
-//   font-size: 1.9rem;
-//   letter-spacing: 0.15rem;
-//   padding-left: 1%;
-// }
-// header h2 {
-//   letter-spacing: 0rem;
-//   padding-bottom: 0.5%;
-  
-//   font-size: 0.9rem;
-//   padding-left: 1%;
-// }
-
-// Nav
-
-// nav button {
-//   margin: 0.2rem 2%;
-//   background-color: transparent;
-//   border: none;
-//   font-size: 1.6rem;
-//   color: #eee;
-// }
-
-// nav {
-//   background-color: $phoneprimaryColor;
-// }
 
 nav {
   grid-area: navigation;
@@ -102,16 +54,6 @@ nav {
  
 }
 
-// nav ul {
-//   list-style-type: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// nav ul {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
 
 nav ul li a {
   display: block;
@@ -119,7 +61,6 @@ nav ul li a {
   padding: 1rem 1%;
   text-decoration: none;
   color: #fff;
-  // border-top: 1px solid rgba(197, 196, 196, 0.5);
   text-align: center;
 }
 
@@ -139,8 +80,6 @@ nav ul li a:hover {
 // Main
 
 main {
-  // margin: 0 auto;
-  // padding: 0;
   grid-area: content;
 background-color: white;
 padding: 2%;
@@ -157,13 +96,6 @@ p {line-height: 1.5rem; font-size: 1.1rem;}
 // grid-template-columns: 1fr;
 img {width: 100%; padding-top: 1.3rem; padding-bottom: 1rem; }
 }
-
-
-// main h1 {
-//   font-size: 1.9rem;
-//   margin-bottom: 0.8rem;
-//   padding-left: 1%;
-// }
 
 
 div#hamburger {
@@ -185,9 +117,6 @@ a.myjump {
 }
 
 .ex {
-  // text-align: start;
-  // padding: 2%;
-  // padding-top: 1%;
   margin-left: 6%;
   color: white;
   text-decoration: none;
@@ -212,7 +141,3 @@ footer p {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
-
-// #footerWrap {
-  
-// }
