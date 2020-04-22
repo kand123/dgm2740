@@ -10,15 +10,57 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
+    // nav ul {margin-left: 2%;}
+    // nav ul li {width: auto;}
+    // nav ul li:first-child a {border-left: 1px solid #777;}
+    // nav ul li:last-child a {border-right: 1px solid #777;}
+    // nav ul li a{padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
 
+
+div#myCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
+    .addressBlock {
+        span{font-size: 1.3rem;}
+    }
+    
+    .phoneBlock {
+        span{font-size: 1.3rem;}
+    }
+
+    .contactInfo {
+        font-size: .9rem;
+        max-width: 90%;
+        // grid-column-gap: 5%;
+        display: flex;
+        justify-content: space-between;
+    padding:6% 0 1% 1%;
+    margin-right: 0;
+   
+    }
+    .addressBlock {
+        padding-left: 3%;
+        min-width: 150px;
+        p {margin-top: 0; padding-left: .5rem;}
+        span{font-size: 1.4rem;}
+    }
+    
+    .phoneBlock {
+        display: flex;
+        justify-self: flex-end;
+        padding-left: .5rem;
+        padding-right: 3%;
+        min-width: 140px;
+        p {margin-top: 0; padding-left: .3rem;}
+        span{font-size: 1.4rem;}
+    }
+
+
+}
 
 
 /*----------- FOOTER --------------*/

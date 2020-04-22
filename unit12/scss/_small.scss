@@ -9,20 +9,26 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
-    background-color: red;
+    padding: 1.3rem 2% 1.2rem 2%;
+    background-color: rgb(231, 27, 12);
+    color: white;
+    border-top: 5px solid black;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {margin: 0; font-size: 1.7rem; font-family: 'Raleway', sans-serif;}
+header h2 {margin: 0; font-weight: normal; font-size: 1.1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #666;
+    
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -45,11 +51,13 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     background-color: #444;
+    background-color: rgb(231, 27, 12);
+    background-color: #000;
     color: #eee;
-    border-left: 1px solid #777;
-    padding: .9rem 0;
+    border-left: 1px solid #ddd;
+    padding: .6rem 0;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: .8rem;
     text-align: center;
 }
 nav ul li:first-child a {border-left: none;}
@@ -60,14 +68,22 @@ nav ul li a:hover {
 }
 nav ul li.active a {
     background-color: #000;
+    background-color: rgb(231, 27, 12);
     color: #fff;
 }
+
+ion-icon {
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+}
+
+
 /*----------- MAIN --------------*/
 main {
     padding: 0;
     min-height: 10rem;
     margin-bottom: 8%;
-    
+    h1 {font-size: 1.6rem; padding-left: 2%; padding-bottom: -.2rem; padding-top: .5rem;}
 }
 div#myCards {
     display: grid;
@@ -76,32 +92,36 @@ div#myCards {
 .eachCard {
     background-color:lightgray;
     margin-bottom: 1rem;
+    
 }    
     
 .contactInfo {
     display:grid;
     grid-template-columns: 1fr 1fr;
-grid-column-gap: 4%;
-    padding:3% 1% 0 1%;
-    font-size: .9rem;
+grid-column-gap: 7%;
+    padding:5% 1% 1% 1%;
+    font-size: 1.1rem;
     
 }
 
 .addressBlock {
     display: flex;
     align-items: flex-start;
-    padding-left: 5%;
+    padding-left: 7%;
+    max-width: 170px;
     p {margin-top: 0; padding-left: .5rem;}
+    span{font-size: 1.4rem;}
 }
 
 .phoneBlock {
     display: flex;
     justify-content: flex-end;
-    padding-right: 5%;
-    p {margin-top: 0; padding-left: .5rem;}
+    padding-right: 7%;
+    p {margin-top: 0; padding-left: .3rem;}
+    span{font-size: 1.4rem;}
+}
 }
 
-}
 figure {
     position: relative;
     margin: 0;
@@ -126,9 +146,7 @@ footer {
     padding: .5rem 2%;
     text-align: center;
     visibility: hidden;
-    
 }
-
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/

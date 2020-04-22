@@ -317,19 +317,26 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif; }
 
 /*----------- HEADER --------------*/
 header {
-  padding: .5rem 2%;
-  background-color: red; }
+  padding: 1.3rem 2% 1.2rem 2%;
+  background-color: #e71b0c;
+  color: white;
+  border-top: 5px solid black; }
 
 header h1 {
-  margin: 0; }
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: 'Raleway', sans-serif; }
 
 header h2 {
   margin: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: 1.1rem; }
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -354,11 +361,13 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   background-color: #444;
+  background-color: #e71b0c;
+  background-color: #000;
   color: #eee;
-  border-left: 1px solid #777;
-  padding: .9rem 0;
+  border-left: 1px solid #ddd;
+  padding: .6rem 0;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: .8rem;
   text-align: center; }
 
 nav ul li:first-child a {
@@ -370,13 +379,23 @@ nav ul li a:hover {
 
 nav ul li.active a {
   background-color: #000;
+  background-color: #e71b0c;
   color: #fff; }
+
+ion-icon {
+  font-size: 1.5rem;
+  margin-bottom: .3rem; }
 
 /*----------- MAIN --------------*/
 main {
   padding: 0;
   min-height: 10rem;
   margin-bottom: 8%; }
+  main h1 {
+    font-size: 1.6rem;
+    padding-left: 2%;
+    padding-bottom: -.2rem;
+    padding-top: .5rem; }
 
 div#myCards {
   display: grid;
@@ -387,23 +406,28 @@ div#myCards {
   div#myCards .contactInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4%;
-    padding: 3% 1% 0 1%;
-    font-size: .9rem; }
+    grid-column-gap: 7%;
+    padding: 5% 1% 1% 1%;
+    font-size: 1.1rem; }
   div#myCards .addressBlock {
     display: flex;
     align-items: flex-start;
-    padding-left: 5%; }
+    padding-left: 7%;
+    max-width: 170px; }
     div#myCards .addressBlock p {
       margin-top: 0;
       padding-left: .5rem; }
+    div#myCards .addressBlock span {
+      font-size: 1.4rem; }
   div#myCards .phoneBlock {
     display: flex;
     justify-content: flex-end;
-    padding-right: 5%; }
+    padding-right: 7%; }
     div#myCards .phoneBlock p {
       margin-top: 0;
-      padding-left: .5rem; }
+      padding-left: .3rem; }
+    div#myCards .phoneBlock span {
+      font-size: 1.4rem; }
 
 figure {
   position: relative;
@@ -436,33 +460,49 @@ footer {
   display: table;
   clear: both; }
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 551px) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%; }
-
-  nav ul li {
-    width: auto; }
-
-  nav ul li:first-child a {
-    border-left: 1px solid #777; }
-
-  nav ul li:last-child a {
-    border-right: 1px solid #777; }
-
-  nav ul li a {
-    padding: .5rem 1rem; }
-
   /*----------- MAIN --------------*/
+  div#myCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%; }
+    div#myCards .addressBlock span {
+      font-size: 1.3rem; }
+    div#myCards .phoneBlock span {
+      font-size: 1.3rem; }
+    div#myCards .contactInfo {
+      font-size: .9rem;
+      max-width: 90%;
+      display: flex;
+      justify-content: space-between;
+      padding: 6% 0 1% 1%;
+      margin-right: 0; }
+    div#myCards .addressBlock {
+      padding-left: 3%;
+      min-width: 150px; }
+      div#myCards .addressBlock p {
+        margin-top: 0;
+        padding-left: .5rem; }
+      div#myCards .addressBlock span {
+        font-size: 1.4rem; }
+    div#myCards .phoneBlock {
+      display: flex;
+      justify-self: flex-end;
+      padding-left: .5rem;
+      padding-right: 3%;
+      min-width: 140px; }
+      div#myCards .phoneBlock p {
+        margin-top: 0;
+        padding-left: .3rem; }
+      div#myCards .phoneBlock span {
+        font-size: 1.4rem; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
-    max-width: 64rem;
-    margin: auto; }
-
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
