@@ -11,29 +11,32 @@ fetch(apiURL)
     for (i = 0;  i < myList.length; i++) {
 
     
-    
     let myImageTag = document.createElement("img");
     myImageTag.src = myList[i].photo;
-    
-    
-    
+  
     let myCaptionTag = document.createElement("figcaption");
     myCaptionTag.textContent = myList[i].name;
     let myFigureTag = document.createElement("figure");
 
-
- 
 
     myFigureTag.appendChild(myImageTag);
     myFigureTag.appendChild(myCaptionTag);
   
 
 
+
+    
+
 // myFigureTag.className = "happyCamper"
     // document.getElementById('myCards').appendChild(myCaptionTag);
     // document.getElementById('myCards').appendChild(myImageTag);
   document.getElementById('myCards').appendChild(myFigureTag);
-  }
-    
+
+
+
+
+
+
+  } //end of loop
 }); //end of "then" fat arrow function
 

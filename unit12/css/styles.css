@@ -375,7 +375,8 @@ nav ul li.active a {
 /*----------- MAIN --------------*/
 main {
   padding: 0 2%;
-  min-height: 10rem; }
+  min-height: 10rem;
+  margin-bottom: 9%; }
 
 div#myCards {
   display: grid;
