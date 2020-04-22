@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: red;
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
@@ -64,19 +64,51 @@ nav ul li.active a {
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    padding: 0;
     min-height: 10rem;
-    margin-bottom: 9%;
+    margin-bottom: 8%;
     
 }
 div#myCards {
     display: grid;
     grid-template-columns: 1fr;
+    
+.eachCard {
+    background-color:lightgray;
+    margin-bottom: 1rem;
+}    
+    
+.contactInfo {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+grid-column-gap: 4%;
+    padding:3% 1% 0 1%;
+    font-size: .9rem;
+    
+}
+
+.addressBlock {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 5%;
+    p {margin-top: 0; padding-left: .5rem;}
+}
+
+.phoneBlock {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    p {margin-top: 0; padding-left: .5rem;}
+}
+
 }
 figure {
     position: relative;
     margin: 0;
-    width: 100%;
+    width: 94%;
+    padding-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
     img{width: 100%;}
 }
 figcaption {
@@ -93,6 +125,7 @@ footer {
     background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
+    visibility: hidden;
     
 }
 

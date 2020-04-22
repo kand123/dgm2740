@@ -23,15 +23,64 @@ fetch(apiURL)
     myFigureTag.appendChild(myCaptionTag);
   
 
+let addressDiv = document.createElement("div");
 
 
-    
+addressDiv.className = "addressBlock";
+let phoneDiv = document.createElement("div");
 
-// myFigureTag.className = "happyCamper"
-    // document.getElementById('myCards').appendChild(myCaptionTag);
-    // document.getElementById('myCards').appendChild(myImageTag);
-  document.getElementById('myCards').appendChild(myFigureTag);
+phoneDiv.className = "phoneBlock";
+let contactDiv = document.createElement("div");
+contactDiv.className = "contactInfo";
 
+contactDiv.appendChild(addressDiv);
+contactDiv.appendChild(phoneDiv);
+
+
+
+
+let myIconDiv = document.createElement("div");
+
+
+let myiconCar = document.createElement('span');
+myiconCar.className = 'fas fa-car-alt'
+myIconDiv.appendChild(myiconCar);
+addressDiv.appendChild(myIconDiv);
+
+let addressText = document.createElement("p");
+addressText.textContent = myList[i].address;
+addressDiv.appendChild(addressText);
+
+
+
+let myphoneIconDiv = document.createElement("div");
+
+
+let myiconPhone = document.createElement('span');
+myiconPhone.className = 'fas fa-phone-alt'
+myphoneIconDiv.appendChild(myiconPhone);
+phoneDiv.appendChild(myphoneIconDiv);
+
+let phoneText = document.createElement("p");
+phoneText.textContent = myList[i].phone;
+phoneDiv.appendChild(phoneText);
+
+
+
+
+
+
+
+
+
+
+
+let cardDiv = document.createElement("div");
+cardDiv.appendChild(myFigureTag);
+cardDiv.appendChild(contactDiv);
+cardDiv.className = "eachCard"
+
+document.getElementById('myCards').appendChild(cardDiv);
 
 
 

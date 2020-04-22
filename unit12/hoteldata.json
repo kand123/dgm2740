@@ -1,25 +1,25 @@
 [   {
-    "name":"Las Vegas, NV",
+    "name":"Las Vegas Strip",
     "photo":"images/hotel1.jpg",
-    "address":["1555 North Canyon Dr.","Lexington, VA 88765"],
+    "address":["1000 Las Vegas Blvd"," Las Vegas, Nevada 88901"],
     "phone":"1-307-886-1234"
     },
     {
-    "name":"Atlanta, GA - Airport",
+    "name":"Atlanta Airport",
     "photo":"images/serenade.jpg",
-    "address":["555 Main St.","Atlanta, GA, 84111"],
-    "phone":"1-307-886-1234"
+    "address":["555 Airport Rd"," Atlanta, Georgia 24811"],
+    "phone":"1-803-886-1234"
     },
     {
     "name":"Clearwater Beach, FL",
     "photo":"images/hotel3.jpg",
-    "address":["2019 Pennsylvania Ave","Washington, DC 20125"],
-    "phone":"1-303-389-2000"
+    "address":["201 Beachfront Rd"," Clearwater, Florida 20125"],
+    "phone":"1-501-389-2000"
     },
     {
     "name":"Los Angeles - Downtown",
     "photo":"images/hotel4.jpg",
-    "address":["1555 North Canyon Dr.","Lexington VA 88765"],
+    "address":["1555 Rodeo Drive"," Los Angeles, CA 98765"],
     "phone":"1-202-828-2500"
     }
 ]
