@@ -21,6 +21,52 @@
 
 
 
+main {
+    h1 {
+        text-align: center;
+        
+    }
+p{text-align: center;}
+h2{text-align: center;}
+    padding: 0 2%;
+    min-height: 20rem;
+    #weatherforecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        .dayDiv {
+            
+            text-align: center;
+            background-color: rgb(124, 214, 241);
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            
+            span {
+               
+            
+                padding: 0px 20px 3px;
+                background-color: rgb(80, 80, 78);
+                
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            img {
+                width: 80px;
+                align-self: center;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
 
 /*----------- FOOTER --------------*/
     
