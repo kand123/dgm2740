@@ -344,8 +344,7 @@ body {
   background-color: #efefef; }
 
 main {
-  padding: 0 2%;
-  min-height: 20rem; }
+  padding: 0 2%; }
   main h1 {
     text-align: center;
     margin-top: 1.8rem;
@@ -365,24 +364,22 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px; }
-    main #weatherforecast .dayDiv {
+    main #weatherforecast div.dayDiv {
       border: 2px solid #8f8f8d;
       text-align: center;
       background-color: #90dff7;
-      min-height: 230px;
-      display: flex;
-      flex-direction: column; }
-      main #weatherforecast .dayDiv span {
+      min-height: 230px; }
+      main #weatherforecast div.dayDiv span {
         padding: 0px 20px 3px;
         background-color: #50504e;
         color: white;
         font-size: 1.3rem; }
-      main #weatherforecast .dayDiv p {
+      main #weatherforecast div.dayDiv p {
         font-size: 1.4rem;
         padding-top: 3.2rem;
         padding-bottom: 0;
         margin-bottom: 1rem; }
-      main #weatherforecast .dayDiv img {
+      main #weatherforecast div.dayDiv img {
         width: 80px;
         align-self: center; }
 

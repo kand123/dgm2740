@@ -48,21 +48,24 @@ h2{text-align: center;
 color: rgb(209, 160, 27); padding: .4rem 0 1.2rem 0;
 }
     padding: 0 2%;
-    min-height: 20rem;
+   
     #weatherforecast {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
-        .dayDiv {
+        
+        
+        div.dayDiv {
             border: 2px solid  rgb(143, 143, 141);
             text-align: center;
             background-color: rgb(144, 223, 247);
             min-height: 230px;
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
+            
             
             span {
-                // width: 100%;
+                
             
                 padding: 0px 20px 3px;
                 background-color: rgb(80, 80, 78);
