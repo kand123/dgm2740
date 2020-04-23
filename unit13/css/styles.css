@@ -368,7 +368,9 @@ main {
       border: 2px solid #8f8f8d;
       text-align: center;
       background-color: #90dff7;
-      min-height: 230px; }
+      min-height: 230px;
+      display: flex;
+      flex-direction: column; }
       main #weatherforecast div.dayDiv span {
         padding: 0px 20px 3px;
         background-color: #50504e;
