@@ -339,64 +339,22 @@ header h2 {
   font-size: 1.1rem; }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  background-color: #666;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 999; }
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-
-nav ul li {
-  float: left;
-  width: 33.33%; }
-
-nav ul li a {
-  display: flex;
-  text-transform: uppercase;
-  flex-direction: column;
-  align-items: center;
-  background-color: #444;
-  background-color: #e71b0c;
-  background-color: #000;
-  color: #eee;
-  border-left: 1px solid #ddd;
-  padding: .6rem 0;
-  text-decoration: none;
-  font-size: .8rem;
-  text-align: center; }
-
-nav ul li:first-child a {
-  border-left: none; }
-
-nav ul li a:hover {
-  background-color: #eee;
-  color: #333; }
-
-nav ul li.active a {
-  background-color: #000;
-  background-color: #e71b0c;
-  color: #fff; }
-
-ion-icon {
-  font-size: 1.5rem;
-  margin-bottom: .3rem; }
-
 /*----------- MAIN --------------*/
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
 #weatherforecast {
-  display: flex; }
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 8rem;
+  background-color: lightgray;
+  padding: 2%; }
 
 /*----------- FOOTER --------------*/
-footer {
-  background-color: #ddd;
-  padding: .5rem 2%;
-  text-align: center;
-  visibility: hidden; }
-
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";

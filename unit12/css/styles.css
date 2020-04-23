@@ -326,7 +326,8 @@ header {
   padding: 1.3rem 2% 1.2rem 2%;
   background-color: #e71b0c;
   color: white;
-  border-top: 5px solid black; }
+  border-top: 5px solid black;
+  width: 100%; }
 
 header h1 {
   margin: 0;
