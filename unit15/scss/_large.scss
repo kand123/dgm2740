@@ -1,8 +1,8 @@
 header,
 nav,
-main,
+.heroImg,
 footer {
-  max-width: 64rem;
+  max-width: 60rem;
   margin: auto;
 }
 
@@ -22,23 +22,29 @@ nav {
   ul > li {
     float: left;
     list-style: none;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    // border-left: 1px solid rgba(0, 0, 0, 0.2);
   }
 
-  ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-  }
+  // ul li:last-child {
+  //   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  // }
 
   //style the anchors
   ul li a {
+    
     display: block;
     background: none;
-    font-size: 0.9em;
-    padding: 0.9em 0.9em;
+    font-size: 0.8rem;
+    // padding: 0.9em 0.9em;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     color: white;
     color: black;
+    color: rgb(225, 225, 225);
+    color: rgb(197, 195, 195);
     text-decoration: none;
-
+    i {font-size: 1.1rem; padding-right: .2rem;}
     -webkit-transition: background 0.3s linear;
     transition: background 0.3s linear;
   }
@@ -53,41 +59,47 @@ nav {
   }
 
   //rules for the sub menu items
-  ul li ul {
-    z-index: 998;
-    position: absolute;
-    background-color: #ff6969;
-    left: -999em;
-    width: 12em;
-  }
-  ul li ul li {
-    width: 100%;
-    border: none;
-    border-top: solid 1px rgba(131, 130, 130, 0.2);
-  }
+  // ul li ul {
+  //   z-index: 998;
+  //   position: absolute;
+  //   background-color: #ff6969;
+  //   left: -999em;
+  //   width: 12em;
+  // }
+  // ul li ul li {
+  //   width: 100%;
+  //   border: none;
+  //   border-top: solid 1px rgba(131, 130, 130, 0.2);
+  // }
 
-  ul li:hover ul {
-    left: auto;
-    margin-left: 0;
-  }
+  // ul li:hover ul {
+  //   left: auto;
+  //   margin-left: 0;
+  // }
 
-  li.current-menu-item a {
-    background-color: darken(#ff6969, 10%);
-  }
+  // li.current-menu-item a {
+  //   background-color: darken(#ff6969, 10%);
+  // }
 } // end nav
 
 /*----------- MAIN --------------*/
 
-form label.sbs {
-  padding: 0.4rem 0;
-}
+.heroImg {
+ 
+  // display: flex; 
+  // justify-content: center;
+ 
+    img{width: 100%; margin-right: auto; margin-left: auto;}
+  }
+  
+  
 
-h1 {
-  margin-bottom: 0;
-}
+// h1 {
+//   margin-bottom: 0;
+// }
 
-main {
-  margin-bottom: 4%;
-}
+// main {
+//   margin-bottom: 4%;
+// }
 
 /*----------- FOOTER --------------*/
