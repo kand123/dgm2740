@@ -34,24 +34,24 @@ nav {
     
     display: block;
     background: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     // padding: 0.9em 0.9em;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     color: white;
     color: black;
     color: rgb(225, 225, 225);
-    color: rgb(197, 195, 195);
+    color: rgb(182, 180, 180);
     text-decoration: none;
     i {font-size: 1.1rem; padding-right: .2rem;}
     -webkit-transition: background 0.3s linear;
     transition: background 0.3s linear;
   }
 
-  ul li a:hover {
-    background-color: #ff6969;
-  }
+  // ul li a:hover {
+  //   background-color: #ff6;
+  // }
 
   #primaryNav li.parent > a::before {
     font-size: 0.75rem;
