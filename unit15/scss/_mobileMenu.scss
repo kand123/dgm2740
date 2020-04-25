@@ -9,12 +9,9 @@
   display: none;
 } /* hide the navigation button for all screen widths. We will show it below just for small screens */
 
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 959px) {
   nav {
     position: absolute;
-    
-    // top:0;
-    // left: 0;
     width: 100%;
     height: 2.75rem;
     background-color: rgb(223, 221, 221);
@@ -58,17 +55,12 @@
     background-color: rgb(195,195,195);
 
     margin: 0;
-  
     padding: 0;
-    
     z-index: 998;
-    // font-family: Verdana;
     font-weight: normal;
   }
 
-  // #primaryNav li.current-menu-item a {
-  //   background-color: darken(#ff6969, 10%);
-  // }
+ 
 
   #primaryNav li a {
     display: block;
@@ -83,11 +75,6 @@
   }
 
 
-  
-  // #primaryNav li a:hover {
-  //   background-color: #ff6969;
-  // }
-
   #primaryNav.open {
     height: auto;
   }
@@ -100,19 +87,4 @@
     float: right;
   }
 
-  // #primaryNav li ul {
-  //   display: none;
-  //   background: rgba(0, 0, 0, 0.3);
-
-  //   padding: 0;
-  //   margin: 0;
-  // }
-
-  // #primaryNav li ul a {
-  //   padding-left: 20px;
-  // }
-
-  // #primaryNav li:hover ul {
-  //   display: block;
-  // }
 }

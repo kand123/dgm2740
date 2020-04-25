@@ -23,20 +23,11 @@ body {
 header {
   h1{visibility: hidden; font-size: .2rem;}
   padding: 1rem 2% .4rem 1%;
-  // background-color: rgb(230, 223, 184);
-  // background-color: white;
-//   background-image: url(../images/blueriverlogo2.png);
-// background-repeat: no-repeat;
-
   display: flex;
   width: 100%;
-  // border-bottom: 1px solid red;
-  align-items: flex-end;
-  // justify-content: flex-start;
+  // align-items: flex-end;
 .below {
-  // margin-bottom: -.15rem;
   height: 58px;
-  z-index: 999;
   position: relative;
   top: 0;
 
@@ -51,77 +42,25 @@ header {
     }
     .sub {width: 97%;}
   }
-  // img {
-  //   width: 290px;
-  //   padding: 2%;
-    
-  // }
 }
-// header h1 {
-//   margin: 0;
-//   font-size: 2.5rem;
-  
-//   padding-left: 0;
-//   margin-left: 0;
-// }
-// header h2 {
-//   margin: 0;
-//   font-weight: normal;
-// }
+
 
 /*----------- NAVIGATION --------------*/
 nav {
-  // background-color: white;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
-  // color: black;
   color: rgb(225, 225, 225);
-  
   border-top: 1.4px solid rgb(207,207, 212);
   
 }
-
-// .partial-border {
-//   position: relative;
-//   display: inline-block;
-//   border-top: 1px solid rgb(207,207, 212);
-//   position: absolute;
-//   margin-bottom: 10px;
-//   position: absolute;
-//   width: 90%;
-//   right: 80%;
-// }
-// // .partial-border:before {
-// //   // content: '';
-// //   border-top: 1px solid rgb(207,207, 212);
-// //   position: absolute;
-// //   width: 90%;
-// //   left: 90%;
-// //   bottom: 0;
-
-// // }
-
-
-
-
-
 
 
 
 /*----------- MAIN --------------*/
 main {
-  // padding: 0 2%;
-  min-height: 10rem;
-  // padding-top: 2.2rem;
-
-
+ 
 #heroImg {
-  
+
   margin-top: 45px;
 max-width: 60rem;
-// display: flex; 
-// justify-content: center;
 margin-right: auto;
 margin-left: auto;
   img{width: 100%;}
@@ -129,15 +68,12 @@ margin-left: auto;
 }
 
 div.banner {
-  // margin-top: 10px;
   background-color: rgb(17,17,24);
   padding: 1rem;
   
-  
   ul {margin-left: 0; margin-top: 0; padding-top: 0;}
   
-  
-  h2 {color: rgb(251, 214, 68); padding: 0; margin-top: 0; margin-bottom: .4rem; font-size: 1.4rem;
+  h2 {color: $yellowText; padding: 0; margin-top: 0; margin-bottom: .4rem; font-size: 1.4rem;
   }
   .largerText{margin-top: .4rem; font-size: 1.6rem;}
   h4{padding:0; margin: 0;}
@@ -171,12 +107,10 @@ div.banner {
   padding-top: 6%;
   h2 {font-size: 1.6rem; margin-bottom: .5rem;}
   h4 {font-size: 1.5rem; margin-top: 1rem; margin-bottom: .25rem; }
-  h2, h4 {color: rgb(21,128, 175);}
+  h2, h4 {color: $blueText;}
   p {font-size: .85rem; margin-top: 0; padding-top: 0; line-height: 1.1rem;}
   .cards {
-  // background: radial-gradient(50% 20% at top, rgb(207, 207, 207), rgb(245, 245, 245));
-
-  //   border-top: 1.4px solid rgb(207,207, 212);
+ 
   border-bottom: 1.4px solid rgb(207,207, 212);
   padding: 1rem 0 1.7rem 0;
     display: grid;
@@ -192,7 +126,7 @@ div.banner {
 #additionalinfo {
   p, h2, h3, h4 {margin-left: 2%;}
   // background: radial-gradient(50% 20% at top, rgb(207, 207, 207), rgb(245, 245, 245));
-  h3 {color:rgb(21,128, 175); font-size: 1.5rem; margin-top: .5rem; margin-bottom: .5rem;}
+  h3 {color:$blueText; font-size: 1.5rem; margin-top: .5rem; margin-bottom: .5rem;}
   p {color:rgb(185, 184, 184); font-size: .9rem; margin-top: 0; padding-top: 0; margin-bottom: 2rem;}
  padding: 1rem 0 2rem 0;
  
@@ -204,8 +138,6 @@ div.banner {
   // gap: 15px;
   padding-top: 7%;
 grid-template-columns: 1fr;
-// gap: 20px;
-// .main {margin-right: 10px;}
   .specs {display: grid;
     
     div {margin-right: 0px;}
@@ -226,7 +158,7 @@ flex-direction: column;
 align-items: center;
 p{font-size: .6rem;}
 img {width: 100%;}
-button {background-color: rgb(21,129, 175);
+button {background-color: $footerDark;
 color: white; 
 padding: .55rem 3rem;
 margin-bottom: .8rem;
@@ -268,7 +200,7 @@ footer {
 }
 
 .footerdiv {
-  background-image: linear-gradient(rgb(21,129,174), rgb(6,64,99));
+  background-image: linear-gradient($footerDark, $footerLight);
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
